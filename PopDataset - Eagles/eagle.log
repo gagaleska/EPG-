@@ -1,0 +1,31 @@
+PLINK v1.9.0-b.7.7 64-bit (22 Oct 2024)
+Options in effect:
+  --allow-extra-chr
+  --file eagle
+  --out eagle
+  --recode A
+
+Hostname: pop-os
+Working directory: /home/evgenija/Desktop/Evgenija Gagaleska /famnit 3rd year/Evolution-and-population-genetics/PopDataset - Eagles
+Start time: Fri Dec 27 17:48:52 2024
+
+Random number seed: 1735318132
+15386 MB RAM detected; reserving 7693 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (217586 variants, 92 people).
+--file: eagle-temporary.bed + eagle-temporary.bim + eagle-temporary.fam
+written.
+217586 variants loaded from .bim file.
+92 people (0 males, 0 females, 92 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to eagle.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 92 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.803547.
+217586 variants and 92 people pass filters and QC.
+Note: No phenotypes present.
+--recode A to eagle.raw ... done.
+
+End time: Fri Dec 27 17:48:53 2024

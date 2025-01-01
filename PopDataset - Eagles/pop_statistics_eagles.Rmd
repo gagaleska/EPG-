@@ -1,0 +1,200 @@
+---
+title: "E03 Statistics for popularion genetics 2"
+author: "Urška Gerič"
+date: "2024-11-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r message=FALSE, results='hide', warning=FALSE}
+library(dartR)
+library(adegenet)
+library(SNPRelate)
+library(HardyWeinberg)
+library(ggtern)
+library(dartRverse)
+library(reshape2)
+library(seqinr)
+library(MultiPhen)
+library(tidyverse)
+library(pegas)
+library(hierfstat)
+```
+
+# Population genetics
+
+# DartR package
+
+Load the data 
+
+```{r message=FALSE, warning=FALSE, results='hide'}
+eagles <- read.PLINK(file="eagle.raw", map.file = "eagle.map")
+```
+
+This command transform plink files into a genlight object. Genlight object has data about SNPs.
+
+Here we can see number of SNPs, individuals, genotypes and so on:
+
+```{r}
+eagles
+```
+
+We can get information about populations:
+
+```{r}
+eagles@pop
+```
+
+Data about individuals(names):
+
+```{r}
+eagles$ind.names
+```
+
+
+We can see that we have really big dataset, so we will subset it to make it easier to work with. We will keep only 9000 SNPs.
+
+```{r}
+eagles_subset <- gl.keep.loc(eagles, first=1001, last=2000)
+eagles_subset
+```
+
+We now need to check if our dataset is ok for using dartR:
+
+```{r}
+eagles_subset <- gl.compliance.check(eagles_subset)
+```
+
+## Allele frequencies
+
+```{r}
+allele_freq_eagles <- gl.alf(eagles_subset[, 1:10])
+```
+
+We can now plot allele frequencies. We need to transform our dataframe and make it as matrix.
+
+```{r}
+barplot(t(as.matrix(allele_freq_eagles)), 
+        xlab="Alleles", 
+        ylab="Frequency", 
+        main="Allele frequencies")
+```
+
+## Heterozygosity
+
+```{r}
+gl.report.heterozygosity(eagles_subset)
+```
+
+
+The output displays heterozygosity by populations (Ho - observed, He - expected) and FIS (Inbreeding Coefficient). Ho and He values range from 0 to 1, where 1 represents 100% heterozygosity. FIS values range from -1 to 1, where positive FIS values indicate that individuals in the population are more related than expected under a random mating model, and negative FIS values indicate that individuals in the population are less related than expected under a random mating model.
+
+## Hardy-Weinberg equilibrium
+
+Ternary plots illustrating the patterns of Hardy-Weinberg (HW) proportions. Each vertex on the plot represents a different genotype: homozygous for the reference allele (AA), heterozygous (AB), and homozygous for the alternative allele (BB). The plots highlight loci that deviate significantly from Hardy-Weinberg equilibrium, and these loci are indicated in pink. The blue parabola on each plot represents Hardy-Weinberg equilibrium, while the area between the green lines represents the acceptance zone. The plots provide a visual representation of the distribution of the SNPs in relation to the Hardy-Weinberg equilibrium and allow for the identification of loci that may be under selection or experiencing other evolutionary forces.
+
+Make ternary plots for each population:
+
+```{r}
+# Here I got that each population has 1 individual, which cannot be used and is not a sufficient data. That's why I'm making three regions to represent three populations and I assigned each population a number of individuals. I checked the total number of individuals and it was 92 so I divided them in 3 such that one has 30 and the other two have 31 individuals.
+
+eagles$pop <- factor(c(rep("Region1", 30), rep("Region2", 31), rep("Region3", 31)))
+eagles_subset@pop <- factor(c(rep("Region1", 30), rep("Region2", 31), rep("Region3", 31)))
+#subset
+gl.report.hwe(eagles_subset, subset = "each")
+
+#whole dataset
+gl.report.hwe(dogs, subset = "each")
+```
+
+Make ternary plot for whole dataset:
+
+```{r}
+gl.report.hwe(eagles_subset, subset = "all")
+```
+
+Make heatmap of Hardy-Weinberg equilibrium p-values:
+
+```{r}
+#subset
+gl.hwe.pop(eagles_subset)
+
+#whole dataset
+# gl.hwe.pop(eagles) doesn't work I don't know why
+```
+
+
+## FST
+
+With FST value we can measure genetic distance between populations. FST indicates the likelihood that two randomly selected genes from two populations share a common origin.
+If we use the argument "nboots," the program performs 100 bootstrap repetitions to calculate p-values.
+
+```{r results='hide', message=FALSE, warning=FALSE}
+fst <- gl.fst.pop(eagles_subset, nboots=100)
+fst$Fsts
+```
+
+Three matrices are displayed:
+
+- The first matrix provides FST values between populations, where higher values indicate a higher level of genetic differentiation between populations.
+- The second matrix provides p-values.
+
+If the p-value is below 0.05, the difference is statistically significant.
+
+## Heatmap of FST values:
+
+First we need to transform our data to dataframe:
+
+```{r}
+fst_df <- melt(as.matrix(fst$Fsts))
+colnames(fst_df) <- c("Population1", "Population2", "FST")
+head(fst_df)
+```
+
+Plot heatmap:
+
+```{r}
+# Plot heatmap using ggplot2
+ggplot(fst_df, aes(x = Population2, y = Population1, fill = FST)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red", name = "FST") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Pairwise FST Heatmap", x = "Population 1", y = "Population 2")
+```
+
+
+## Effective population size
+
+The effective population size can be estimated using the gl.LDNe() function. This function estimates Ne based on linkage disequilibrium (LD).
+
+We say that loci are in LD when the frequency of association between their alleles is higher or lower than expected if the loci were independent and associated randomly.
+For example, if two loci are located close to each other, they are usually inherited together.
+The function also requires the Ne2-1 (L, M, .exe) file, depending on your operating system.
+
+```{r}
+genotype_matrix <- as.matrix(eagles_subset)
+colnames(genotype_matrix)
+new_colnames <- paste0("locus", seq_len(ncol(genotype_matrix)), ".1")
+colnames(genotype_matrix) <- new_colnames
+eagles_subset <- new("genlight", genotype_matrix)
+ne_sub <- gl.LDNe(eagles_subset)
+ne_sub<- gl.LDNe(eagles_subset)
+ne_all <- gl.LDNe(eagles)
+ne_all
+```
+
+
+# Export results in csv files
+
+```{r results='hide', message=FALSE, warning=FALSE}
+write.csv(allele_freq, "allele_freq.csv")
+write.csv(gl.report.heterozygosity(dogs_subset), "heterozygosity.csv")
+write.csv(fst$Fsts, "fst.csv")
+write.csv(fst_df, "fst_df.csv")
+write.csv(fst$Bootstraps, "fst_boot.csv")
+```
