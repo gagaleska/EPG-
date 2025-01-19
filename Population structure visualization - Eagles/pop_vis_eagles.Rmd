@@ -140,6 +140,9 @@ coordinates <- read.table("koordinate.txt",header = T)
 as.data.frame(coordinates)
 ```
 
+There are four groups in the paper so it is enough that I use these four groups and find coordinates just for those.
+Think if the isokation bz distance is significant, if it is not other things influence the diversity and genetic differences. (for example there can be species close geographically, but far genetically)
+
 Now we can run the gl.ibd command, which will calculate isolation with distance.
 
 ```{r}
