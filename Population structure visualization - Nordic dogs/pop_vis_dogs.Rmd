@@ -3,8 +3,8 @@ title: "Population structure"
 author: "Evgenija Gagaleska"
 date: "2025-01-01"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -175,7 +175,7 @@ gl.grm.network(x=dogs, G = gl.grm(dogs), method = "kk")
 ```
 
 ```{r}
-#Mapa (če ne dela v Viewer, odpreš z Zoom.
+#Mapa (if it doesn't work in Viewer, open with Zoom).
 #gl.map.interactive(dogs)
 ```
 

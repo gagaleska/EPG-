@@ -1,0 +1,32 @@
+PLINK v1.9.0-b.7.7 64-bit (22 Oct 2024)
+Options in effect:
+  --allow-extra-chr
+  --chr-set 38
+  --file eagle
+  --out eagle_corr
+  --recode ped
+
+Hostname: pop-os
+Working directory: /home/evgenija/Desktop/Evgenija Gagaleska /famnit 3rd year/EPG-/Population structure visualization-Eagles
+Start time: Sun Jan 19 15:57:46 2025
+
+Random number seed: 1737298666
+15386 MB RAM detected; reserving 7693 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (217586 variants, 92 samples).
+--file: eagle_corr-temporary.bed + eagle_corr-temporary.bim +
+eagle_corr-temporary.fam written.
+217586 variants loaded from .bim file.
+92 samples (0 males, 0 females, 92 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to eagle_corr.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 92 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.803547.
+217586 variants and 92 samples pass filters and QC.
+Note: No phenotypes present.
+--recode ped to eagle_corr.ped + eagle_corr.map ... done.
+
+End time: Sun Jan 19 15:57:47 2025

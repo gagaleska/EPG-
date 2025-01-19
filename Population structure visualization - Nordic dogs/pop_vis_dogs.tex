@@ -1,0 +1,929 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Population structure},
+  pdfauthor={Evgenija Gagaleska},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Population structure}
+\author{Evgenija Gagaleska}
+\date{2025-01-01}
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the required libraries}
+\FunctionTok{library}\NormalTok{(dartR)}
+\FunctionTok{library}\NormalTok{(adegenet)}
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(proxy)}
+\FunctionTok{library}\NormalTok{(iterpc)}
+\FunctionTok{library}\NormalTok{(expm)}
+\FunctionTok{library}\NormalTok{(directlabels)}
+\FunctionTok{library}\NormalTok{(MASS)}
+\FunctionTok{library}\NormalTok{(gplots)}
+\FunctionTok{library}\NormalTok{(rrBLUP)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Import the data}\label{import-the-data}
+
+Something is wrong with the data, so we need to correct it:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{corr\_data }\OtherTok{\textless{}{-}} \FunctionTok{paste}\NormalTok{(}\StringTok{"./plink"}\NormalTok{,}
+                   \StringTok{"{-}{-}file NordicDogs\_4mars2014"}\NormalTok{,                }\CommentTok{\# PLINK binary input files (prefix only)}
+                   \StringTok{"{-}{-}export ped"}\NormalTok{,                 }\CommentTok{\# Specify \textquotesingle{}ped\textquotesingle{} as the output format}
+                   \StringTok{"{-}{-}allow{-}extra{-}chr"}\NormalTok{,}
+                   \StringTok{"{-}{-}chr{-}set 38"}\NormalTok{,}
+                   \StringTok{"{-}{-}out NordicDogs\_corr"}\NormalTok{)        }\CommentTok{\# Specify output prefix}
+\FunctionTok{system}\NormalTok{(corr\_data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dogs}\OtherTok{\textless{}{-}}\FunctionTok{read.PLINK}\NormalTok{(}\StringTok{"NordicDogs.raw"}\NormalTok{, }\AttributeTok{ped.file =} \StringTok{"NordicDogs\_corr.ped"}\NormalTok{, }\AttributeTok{map.file =} \StringTok{"NordicDogs\_corr.map"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Reading PLINK raw format into a genlight object... 
+## 
+## 
+##  Reading loci information... 
+## 
+##  Reading and converting genotypes... 
+## .
+##  Building final object... 
+## 
+## ...done.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dogs}\OtherTok{\textless{}{-}}\FunctionTok{gl.compliance.check}\NormalTok{(dogs)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.compliance.check 
+##   Processing genlight object with SNP data
+##   The slot loc.all, which stores allele name for each locus, is empty. 
+## Creating a dummy variable (A/C) to insert in this slot. 
+##   Checking coding of SNPs
+##     SNP data scored NA, 0, 1 or 2 confirmed
+##   Checking locus metrics and flags
+##   Recalculating locus metrics
+##   Checking for monomorphic loci
+##     Dataset contains monomorphic loci
+##   Checking for loci with all missing data
+##     No loci with all missing data detected
+##   Checking whether individual names are unique.
+##   Checking for individual metrics
+##   Warning: Creating a slot for individual metrics
+##   Checking for population assignments
+##     Population assignments confirmed
+##   Spelling of coordinates checked and changed if necessary to 
+##             lat/lon
+## Completed: gl.compliance.check
+\end{verbatim}
+
+\section{POPULATION STRUCTURE}\label{population-structure}
+
+\subsection{PCA - Principal component
+analysis}\label{pca---principal-component-analysis}
+
+Principal component analysis (PCA) is a statistical procedure that is
+commonly used in genomics to reduce the dimensionality of large
+datasets. It reduces the complexity of data sets while preserving the
+covariance of the data. Covariance is a measure that determines how two
+random variables are related. The results of PCA are used to design
+studies, identify and describe individuals and populations, and draw
+historical and ethnobiological conclusions about origin, evolution,
+dispersion, and relatedness. It is a powerful tool that can be used to
+visualize data, identify patterns, and uncover hidden relationships
+between variables.
+
+Population genomics -\textgreater{} many SNPs for many individuals!
+
+To create a PCA graph, we will use two commands. The first command
+calculates the PCA and the second command draws the graph. The command
+used to calculate the PCA in dartR is gl.pcoa(). You need to define the
+name of the object in which you want to save the PCA calculation data.
+
+If I have a question in the exam, I have to specify how many variants I
+have depending on how many principal components I choose. For example if
+I choose 1 and 2, I should count on y-axis and comment this on the axis
+report.
+
+\begin{itemize}
+\tightlist
+\item
+  E.g. pca.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{calc_pca.png}
+\caption{Calculation PCA}
+\end{figure}
+
+\includegraphics{eigen.png} \includegraphics{scree_plot.png}
+
+Calculate principle components:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{pca }\OtherTok{\textless{}{-}} \FunctionTok{gl.pcoa}\NormalTok{(dogs)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.pcoa 
+##   Processing genlight object with SNP data
+##   Performing a PCA, individuals as entities, loci as attributes, SNP genotype as state
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+\begin{verbatim}
+## Completed: gl.pcoa
+\end{verbatim}
+
+\begin{figure}
+\centering
+\includegraphics{plot_pca.png}
+\caption{Plot}
+\end{figure}
+
+Two graphs are drawn, the Scree Plot, which is intended to explain the
+PCA and decide how many components need to be preserved. So, the first
+component (value 1 on the PCA Axis) contributes to the explanation of
+38\% of the variance in our data, the second explains 10\%, \ldots{} To
+display the data on a 2D graph, always take the 1st and 2nd component,
+as they contribute to the greatest explanation of variance. To draw the
+graph, use the following command:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.pcoa.plot}\NormalTok{(}\AttributeTok{x =}\NormalTok{ dogs, }\AttributeTok{glPca =}\NormalTok{ pca)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.pcoa.plot 
+##   Processing an ordination file (glPca)
+##   Processing genlight object with SNP data
+##   Plotting populations in a space defined by the SNPs
+##   Preparing plot .... please wait
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{verbatim}
+## Completed: gl.pcoa.plot
+\end{verbatim}
+
+The graph visualizes the structure of our data. Each point represents
+one individual/sample, which is colored based on the population to which
+it belongs. From the graph, we can see that we have 4 populations (IS,
+NBS, NBH, and LH). On the X-axis we have the 1st component, which
+explains 38\% of the variance and on the Y-axis the 2nd component, which
+explains 10.5\% of the variance. From the graph, we can see that the LH
+population differs the most from the other 3 populations. The other 3
+populations also differ from each other, but this difference is not so
+great.
+
+If you want to play a little, you can also draw a 3D graph by adding the
+variable ``zaxis = 3''.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.pcoa.plot}\NormalTok{(}\AttributeTok{x =}\NormalTok{ dogs, }\AttributeTok{glPca =}\NormalTok{ pca, }\AttributeTok{zaxis =} \DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.pcoa.plot 
+##   Processing an ordination file (glPca)
+##   Processing genlight object with SNP data
+##   Displaying a three dimensional plot, mouse over for details for each point
+##   May need to zoom out to place 3D plot within bounds
+## Completed: gl.pcoa.plot
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# z{-}axis = 3 means the third principal component }
+\end{Highlighting}
+\end{Shaded}
+
+In 3D view, we also have the third component, which explains 7.5\% of
+the variance.
+
+\subsection{NEIGHBOUR JOINING TREE}\label{neighbour-joining-tree}
+
+In the 1st set of exercises, you learned about phylogenetic trees. Such
+trees can also be calculated and drawn to summarize genetic similarities
+between populations. The command is as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.tree.nj}\NormalTok{(dogs, }\AttributeTok{type =} \StringTok{"phylogram"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.tree.nj 
+##   Processing genlight object with SNP data
+##   Converting to a matrix of frequencies, locus by populations
+##   Computing Euclidean distances
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+\begin{verbatim}
+## Completed: gl.tree.nj
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Phylogenetic tree with 4 tips and 2 internal nodes.
+## 
+## Tip labels:
+##   IS, LH, NBH, NBS
+## 
+## Unrooted; includes branch lengths.
+\end{verbatim}
+
+The tree is interpreted in a similar way as in phylogeny, although in
+this case there are only 4 populations.
+
+\subsection{STRUCTURE}\label{structure}
+
+The STRUCTURE program is used to analyze genotype data with multiple
+loci to explore population structure. The program allows the analysis of
+different populations, assigning individuals to populations, studying
+hybrid zones, identifying migrants and mixed individuals, \ldots{}
+Structure is also a program with a graphical interface, which would mean
+that we have to export the data from R, enter it in the program and
+click for analysis\ldots{} because this takes time, we will use
+STRUCTURE through R, the function is implemented in the dartR package.
+It only needs to have Structure.exe in the folder where we work. If you
+are working on Mac/Linux, you need to have the correct file in the
+folder (structureLinux or structureMac) and change ``exec='' in the
+command. The k.range parameter describes the number of subpopulations
+that make up the entire population. Since we do not know how many true
+subpopulations we have in our data set, we will calculate the structure
+for 1 to 10 possible subpopulations. With the num.k.rep parameter, we
+choose the number of repetitions for each K. in our case this will be 2.
+If we wanted to calculate K from 1 to 10 and 2 repetitions on all SNPs,
+we would be here for quite some time, so for the purpose of the exercise
+we will use only the first 1000 SNPs. We specify this by adding
+{[},1:1000{]} after the name of our object that contains the SNP data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{str }\OtherTok{\textless{}{-}} \FunctionTok{gl.run.structure}\NormalTok{(dogs[,}\DecValTok{1}\SpecialCharTok{:}\DecValTok{1000}\NormalTok{], }\AttributeTok{k.range=} \DecValTok{1}\SpecialCharTok{:}\DecValTok{6}\NormalTok{, }\AttributeTok{num.k.rep =} \DecValTok{2}\NormalTok{, }\AttributeTok{exec =} \StringTok{"./structure"}\NormalTok{, }\AttributeTok{numreps=}\DecValTok{200}\NormalTok{, }\AttributeTok{burnin=}\DecValTok{100}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.run.structure 
+##   Processing genlight object with SNP data
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-8-1.pdf}
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-8-2.pdf}
+
+\begin{verbatim}
+## Completed: gl.run.structure
+\end{verbatim}
+
+When it finishes, 4 graphs are drawn. For us, the \(\Delta\)K graph is
+important. If the graph is not displayed, use the command gl.evanno(str)
+\(\Delta\)K estimates the number of calculated subpopulations that best
+estimate the structure of our data. We look at \(\Delta\)K with the
+highest value. In this case, the highest value is 4, then 2.
+
+To draw a graph of population structure, use the command:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.evanno}\NormalTok{(str)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\begin{verbatim}
+## $df
+##   k reps mean.ln.k    sd.ln.k   ln.pk  ln.ppk     delta.k
+## 1 1    2 -36600.65  19.162594      NA      NA          NA
+## 2 2    2 -27099.50   9.758074 9501.15 7979.40 817.7228768
+## 3 3    2 -25577.75   9.404520 1521.75 1505.15 160.0453792
+## 4 4    2 -25561.15  21.425335   16.60  418.70  19.5422844
+## 5 5    2 -25125.85 755.967860  435.30  159.90   0.2115169
+## 6 6    2 -24530.65 256.891894  595.20      NA          NA
+## 
+## $plots
+## $plots$mean.ln.k
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-9-2.pdf}
+
+\begin{verbatim}
+## 
+## $plots$ln.pk
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-9-3.pdf}
+
+\begin{verbatim}
+## 
+## $plots$ln.ppk
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-9-4.pdf}
+
+\begin{verbatim}
+## 
+## $plots$delta.k
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-9-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.plot.structure}\NormalTok{(str, }\AttributeTok{K=}\DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.plot.structure
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-9-6.pdf}
+
+\begin{verbatim}
+## Completed: gl.plot.structure
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.plot.structure}\NormalTok{(str, }\AttributeTok{K=}\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.plot.structure
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-9-7.pdf}
+
+\begin{verbatim}
+## Completed: gl.plot.structure
+\end{verbatim}
+
+Specify the name of the object in which we saved the results of the
+gl.run.structure command and the number of subpopulations. The graph
+shows samples (one sample one column) and populations (separated by a
+thicker line). Each color represents one subpopulation. In our case, we
+see that each of our populations belongs to its own subpopulation.
+
+\subsection{ISOLATION BY DISTANCE}\label{isolation-by-distance}
+
+The correlation of genetic diversity between individuals decreases as a
+function of geographic distance. It is usually the simplest model of the
+cause of genetic isolation between populations. Migration is usually
+localized in space, which is why individuals from nearby subpopulations
+are expected to be more genetically similar. To calculate IBD, in
+addition to genetic data, we also need coordinates. The IBD command
+calculates the FST distance and the Euclidean distance (distance in
+space between individuals).
+
+Before running the command, we need to import the table with the
+coordinates. We do this with the read.table command, as the data is
+stored in a .txt file. We need to save the data in an object. We add the
+header = T parameter, because in our table the column names are in the
+first row.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{coordinates }\OtherTok{\textless{}{-}} \FunctionTok{read.table}\NormalTok{(}\StringTok{"koordinate.txt"}\NormalTok{,}\AttributeTok{header =}\NormalTok{ T)}
+\FunctionTok{as.data.frame}\NormalTok{(coordinates)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       id       lat        lon
+## 1   NBH1  59.53669   5.995681
+## 2   NBH2  60.32728   5.765645
+## 3   NBH3  59.59346   5.173156
+## 4   NBH4  60.41849   5.997113
+## 5   NBH5  59.88235   5.281552
+## 6   NBH6  60.38275   5.914496
+## 7   NBH7  60.10441   5.218101
+## 8   NBH8  60.44375   5.794042
+## 9   NBH9  60.08612   5.698063
+## 10 NBH10  59.60227   5.088788
+## 11  NBS1  62.84657  32.738255
+## 12  NBS2  62.62915  32.999024
+## 13  NBS3  62.25887  32.520957
+## 14  NBS4  62.83628  32.576176
+## 15  NBS5  62.75810  33.092774
+## 16  NBS6  62.70377  33.133802
+## 17  NBS7  62.89742  33.288437
+## 18  NBS8  62.92714  32.921045
+## 19  NBS9  62.76979  33.176854
+## 20 NBS10  63.04923  32.594799
+## 21 NBS11  62.31138  32.671873
+## 22 NBS12  62.33242  33.231559
+## 23   LH1 -63.67989   9.068604
+## 24   LH2 -63.69099   8.372544
+## 25   LH3 -63.59375   8.520702
+## 26   LH4 -63.69792   9.278765
+## 27   LH5 -63.13808   8.978285
+## 28   LH6 -62.95236   9.287032
+## 29   LH7 -63.47238   8.535586
+## 30   LH8 -63.88909   8.677546
+## 31   LH9 -63.02742   8.609861
+## 32  LH10 -63.48874   9.279293
+## 33  LH11 -63.49909   9.038124
+## 34  LH12 -63.40154   9.168848
+## 35  LH13 -63.38912   9.004737
+## 36  LH14 -63.48492   8.729254
+## 37  LH15 -63.14126   9.036027
+## 38  LH16 -63.03417   8.753986
+## 39  LH17 -63.52245   8.555409
+## 40   IS1  64.42144 -19.801149
+## 41   IS2  64.08507 -19.766706
+## 42   IS3  63.73117 -20.042968
+## 43   IS4  64.02555 -19.682619
+## 44   IS5  64.02821 -20.028595
+## 45   IS6  63.85145 -19.477430
+## 46   IS7  64.57192 -19.812506
+## 47   IS8  64.08727 -19.808740
+## 48   IS9  64.40918 -19.900286
+\end{verbatim}
+
+Now we can run the gl.ibd command, which will calculate isolation with
+distance.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.ibd}\NormalTok{(dogs, }\AttributeTok{coordinates =}\NormalTok{ coordinates[,}\DecValTok{2{-}3}\NormalTok{], }\AttributeTok{distance =} \StringTok{"Fst"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Analysis performed on the genlight object.
+\end{verbatim}
+
+\begin{verbatim}
+## 'nperm' >= set of all permutations: complete enumeration.
+\end{verbatim}
+
+\begin{verbatim}
+## Set of permutations < 'minperm'. Generating entire set.
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+\begin{verbatim}
+##   Coordinates used from: data.frame lat/lon (Mercator transformed) 
+##   Transformation of Dgeo: Dgeo 
+##   Genetic distance: Fst 
+##   Tranformation of Dgen:  Dgen 
+## 
+## Mantel statistic based on Pearson's product-moment correlation 
+## 
+## Call:
+## vegan::mantel(xdis = Dgen, ydis = Dgeo, permutations = permutations,      na.rm = TRUE) 
+## 
+## Mantel statistic r: 0.9425 
+##       Significance: 0.125 
+## 
+## Upper quantiles of permutations (null model):
+##   90%   95% 97.5%   99% 
+## 0.940 0.980 0.985 0.985 
+## Permutation: free
+## Number of permutations: 23
+## 
+## 
+## Completed: gl.ibd
+\end{verbatim}
+
+\begin{verbatim}
+## $Dgen
+##            IS        LH       NBH
+## LH  0.6503728                    
+## NBH 0.2730587 0.6347757          
+## NBS 0.1755985 0.5133535 0.1753915
+## 
+## $Dgeo
+##           IS       LH      NBH
+## LH  18860453                  
+## NBH  2991798 17616085         
+## NBS  5880331 18424767  3103178
+## 
+## $mantel
+## 
+## Mantel statistic based on Pearson's product-moment correlation 
+## 
+## Call:
+## vegan::mantel(xdis = Dgen, ydis = Dgeo, permutations = permutations,      na.rm = TRUE) 
+## 
+## Mantel statistic r: 0.9425 
+##       Significance: 0.125 
+## 
+## Upper quantiles of permutations (null model):
+##   90%   95% 97.5%   99% 
+## 0.940 0.980 0.985 0.985 
+## Permutation: free
+## Number of permutations: 23
+\end{verbatim}
+
+The x-axis shows the Euclidean distance, and the y-axis shows the
+genetic distance. Because the slope of the line is positive (the line
+goes up), we can conclude that we have isolation with distance in our
+dataset. If the slope of the line was 0 (horizontal), it would mean that
+we do not have IBD in our data.
+
+\subsubsection{Density plot}\label{density-plot}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Prepeare the matrices}
+\NormalTok{Dgeo }\OtherTok{\textless{}{-}} \FunctionTok{as.matrix}\NormalTok{(}\FunctionTok{dist}\NormalTok{(coordinates[,}\DecValTok{2{-}3}\NormalTok{]))}
+\NormalTok{Dgen }\OtherTok{\textless{}{-}} \FunctionTok{as.matrix}\NormalTok{(}\FunctionTok{dist}\NormalTok{(}\FunctionTok{as.matrix}\NormalTok{(dogs)))}
+
+\CommentTok{\#Calculate density}
+\NormalTok{dens }\OtherTok{\textless{}{-}} \FunctionTok{kde2d}\NormalTok{(}\FunctionTok{as.vector}\NormalTok{(Dgeo), }\FunctionTok{as.vector}\NormalTok{(Dgen), }\AttributeTok{n=}\DecValTok{300}\NormalTok{)}
+
+\CommentTok{\#Create color palette}
+\NormalTok{myPal }\OtherTok{\textless{}{-}} \FunctionTok{colorRampPalette}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"white"}\NormalTok{, }\StringTok{"blue"}\NormalTok{, }\StringTok{"gold"}\NormalTok{, }\StringTok{"orange"}\NormalTok{, }\StringTok{"red"}\NormalTok{))}
+
+\CommentTok{\#Plot all together}
+\FunctionTok{plot}\NormalTok{(Dgeo, Dgen, }\AttributeTok{pch=}\DecValTok{20}\NormalTok{,}\AttributeTok{cex=}\NormalTok{.}\DecValTok{5}\NormalTok{)}
+\FunctionTok{image}\NormalTok{(dens, }\AttributeTok{col=}\FunctionTok{transp}\NormalTok{(}\FunctionTok{myPal}\NormalTok{(}\DecValTok{300}\NormalTok{),.}\DecValTok{7}\NormalTok{), }\AttributeTok{add=}\ConstantTok{TRUE}\NormalTok{)}
+
+\CommentTok{\# Calculate distance }
+\NormalTok{dist\_lm }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(}\FunctionTok{as.vector}\NormalTok{(Dgen) }\SpecialCharTok{\textasciitilde{}} \FunctionTok{as.vector}\NormalTok{(Dgeo))}
+\FunctionTok{abline}\NormalTok{(dist\_lm)}
+\FunctionTok{title}\NormalTok{(}\StringTok{"Isolation by distance plot"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\subsection{Other visualizations}\label{other-visualizations}
+
+If we want to calculate identity by descent matrix (IBS matrix) we can
+run this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Calculates an identity by descent matrix}
+\FunctionTok{gl.grm}\NormalTok{(dogs)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.grm 
+##   Processing genlight object with SNP data
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+\begin{verbatim}
+## Completed: gl.grm
+\end{verbatim}
+
+We can also draw a network:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.grm.network}\NormalTok{(}\AttributeTok{x=}\NormalTok{dogs, }\AttributeTok{G =} \FunctionTok{gl.grm}\NormalTok{(dogs), }\AttributeTok{method =} \StringTok{"kk"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.grm.network 
+##   Processing genlight object with SNP data
+## Starting gl.grm 
+##   Processing genlight object with SNP data
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-14-1.pdf}
+
+\begin{verbatim}
+## Completed: gl.grm
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-14-2.pdf}
+
+\begin{verbatim}
+## Completed: gl.grm.network
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Mapa (if it doesn\textquotesingle{}t work in Viewer, open with Zoom).}
+\CommentTok{\#gl.map.interactive(dogs)}
+\end{Highlighting}
+\end{Shaded}
+
+Calculating alpha and beta diversity:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{gl.report.diversity}\NormalTok{(dogs) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Starting gl.report.diversity 
+##   Processing genlight object with SNP data
+##   |                            |                    |   0% Counting missing loci...             |                            |==                  |  12% Calculating zero_H/D_alpha ...             |                            |=====               |  25% Calculating one_H/D_alpha ...            |                            |========            |  38% Calculating two_H/D_alpha ...             |                            |==========          |  50% Counting pairwise missing loci...  |                            |============        |  62% Calculating zero_H/D_beta ...           |                            |===============     |  75% Calculating one_H/D_beta ...
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_es[[x[1]]]$dummys[i1 %in% index] +
+## one_H_alpha_es[[x[2]]]$dummys[i2 %in% : longer object length is not a multiple
+## of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_all[i0 %in% index] - (one_H_alpha_es[[x[1]]]$dummys[i1
+## %in% : longer object length is not a multiple of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_es[[x[1]]]$dummys[i1 %in% index] +
+## one_H_alpha_es[[x[2]]]$dummys[i2 %in% : longer object length is not a multiple
+## of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_all[i0 %in% index] - (one_H_alpha_es[[x[1]]]$dummys[i1
+## %in% : longer object length is not a multiple of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_es[[x[1]]]$dummys[i1 %in% index] +
+## one_H_alpha_es[[x[2]]]$dummys[i2 %in% : longer object length is not a multiple
+## of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_all[i0 %in% index] - (one_H_alpha_es[[x[1]]]$dummys[i1
+## %in% : longer object length is not a multiple of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_es[[x[1]]]$dummys[i1 %in% index] +
+## one_H_alpha_es[[x[2]]]$dummys[i2 %in% : longer object length is not a multiple
+## of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_all[i0 %in% index] - (one_H_alpha_es[[x[1]]]$dummys[i1
+## %in% : longer object length is not a multiple of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_es[[x[1]]]$dummys[i1 %in% index] +
+## one_H_alpha_es[[x[2]]]$dummys[i2 %in% : longer object length is not a multiple
+## of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_all[i0 %in% index] - (one_H_alpha_es[[x[1]]]$dummys[i1
+## %in% : longer object length is not a multiple of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_es[[x[1]]]$dummys[i1 %in% index] +
+## one_H_alpha_es[[x[2]]]$dummys[i2 %in% : longer object length is not a multiple
+## of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in one_H_alpha_all[i0 %in% index] - (one_H_alpha_es[[x[1]]]$dummys[i1
+## %in% : longer object length is not a multiple of shorter object length
+\end{verbatim}
+
+\begin{verbatim}
+##   |                            |==================  |  88% Calculating two_H/D_beta...      |                            |====================| 100% Done.
+\end{verbatim}
+
+\includegraphics{pop_vis_dogs_files/figure-latex/unnamed-chunk-16-1.pdf}
+
+\begin{verbatim}
+## 
+## 
+## |    | nloci| m_0Ha| sd_0Ha| m_1Ha| sd_1Ha| m_2Ha| sd_2Ha|
+## |:---|-----:|-----:|------:|-----:|------:|-----:|------:|
+## |IS  | 19998| 0.614|  0.487| 0.309|  0.279| 0.205|  0.196|
+## |LH  | 19983| 0.104|  0.305| 0.052|  0.163| 0.035|  0.111|
+## |NBH | 19996| 0.636|  0.481| 0.321|  0.278| 0.213|  0.196|
+## |NBS | 19999| 0.791|  0.406| 0.415|  0.258| 0.278|  0.186|
+## 
+## 
+## pairwise non-missing loci
+## 
+## |    |    IS|    LH|   NBH| NBS|
+## |:---|-----:|-----:|-----:|---:|
+## |IS  |    NA|    NA|    NA|  NA|
+## |LH  | 19981|    NA|    NA|  NA|
+## |NBH | 19994| 19979|    NA|  NA|
+## |NBS | 19997| 19982| 19996|  NA|
+## 
+## 
+## 0_H_beta
+## 
+## |    |    IS|    LH|   NBH|   NBS|
+## |:---|-----:|-----:|-----:|-----:|
+## |IS  |    NA| 0.273| 0.222| 0.213|
+## |LH  | 0.308|    NA| 0.269| 0.232|
+## |NBH | 0.134| 0.317|    NA| 0.207|
+## |NBS | 0.119| 0.353| 0.110|    NA|
+## 
+## 
+## 1_H_beta
+## 
+## |    |    IS|    LH|   NBH|   NBS|
+## |:---|-----:|-----:|-----:|-----:|
+## |IS  |    NA| 0.254| 0.251| 0.249|
+## |LH  | 0.220|    NA| 0.251| 0.237|
+## |NBH | 0.085| 0.214|    NA| 0.237|
+## |NBS | 0.039| 0.167| 0.033|    NA|
+## 
+## 
+## 2_H_beta
+## 
+## |    |    IS|    LH|   NBH|   NBS|
+## |:---|-----:|-----:|-----:|-----:|
+## |IS  |    NA| 0.208| 0.214| 0.209|
+## |LH  | 0.221|    NA| 0.206| 0.197|
+## |NBH | 0.083| 0.216|    NA| 0.207|
+## |NBS | 0.031| 0.177| 0.023|    NA|
+## 
+## 
+## |    | nloci| m_0Da| sd_0Da| m_1Da| sd_1Da| m_2Da| sd_2Da|
+## |:---|-----:|-----:|------:|-----:|------:|-----:|------:|
+## |IS  | 19998| 1.614|  0.487| 1.416|  0.392| 1.347|  0.369|
+## |LH  | 19983| 1.104|  0.305| 1.070|  0.224| 1.059|  0.199|
+## |NBH | 19996| 1.636|  0.481| 1.433|  0.391| 1.362|  0.370|
+## |NBS | 19999| 1.791|  0.406| 1.563|  0.370| 1.478|  0.366|
+## 
+## 
+## pairwise non-missing loci
+## 
+## |    |    IS|    LH|   NBH| NBS|
+## |:---|-----:|-----:|-----:|---:|
+## |IS  |    NA|    NA|    NA|  NA|
+## |LH  | 19981|    NA|    NA|  NA|
+## |NBH | 19994| 19979|    NA|  NA|
+## |NBS | 19997| 19982| 19996|  NA|
+## 
+## 
+## 0_D_beta
+## 
+## |    |    IS|    LH|   NBH|   NBS|
+## |:---|-----:|-----:|-----:|-----:|
+## |IS  |    NA| 0.273| 0.222| 0.213|
+## |LH  | 1.308|    NA| 0.269| 0.232|
+## |NBH | 1.134| 1.317|    NA| 0.207|
+## |NBS | 1.119| 1.353| 1.110|    NA|
+## 
+## 
+## 1_D_beta
+## 
+## |    |    IS|    LH|   NBH|   NBS|
+## |:---|-----:|-----:|-----:|-----:|
+## |IS  |    NA| 0.321| 0.286| 0.274|
+## |LH  | 1.286|    NA| 0.316| 0.284|
+## |NBH | 1.124| 1.278|    NA| 0.257|
+## |NBS | 1.072| 1.215| 1.063|    NA|
+## 
+## 
+## 2_D_beta
+## 
+## |    |    IS|    LH|   NBH|   NBS|
+## |:---|-----:|-----:|-----:|-----:|
+## |IS  |    NA| 0.274| 0.253| 0.233|
+## |LH  | 1.275|    NA| 0.272| 0.248|
+## |NBH | 1.113| 1.268|    NA| 0.231|
+## |NBS | 1.055| 1.217| 1.047|    NA|
+## Completed: gl.report.diversity
+\end{verbatim}
+
+\end{document}
