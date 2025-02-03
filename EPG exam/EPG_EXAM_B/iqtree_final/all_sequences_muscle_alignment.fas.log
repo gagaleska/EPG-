@@ -1,0 +1,142 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fermat (AVX2, FMA3, 1009 GB RAM)
+Command: ../../iqtree -s all_sequences_muscle_alignment.fas -m GTR+F+I+G4+F -bb 1000 -alrt 1000
+Seed:    217369 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jan 30 16:24:18 2025
+Kernel:  AVX+FMA - 1 threads (128 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 128 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file all_sequences_muscle_alignment.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 20 sequences with 14288 columns, 5484 distinct patterns
+5240 parsimony-informative, 1500 singleton sites, 7548 constant sites
+                                        Gap/Ambiguity  Composition  p-value
+   1  MN356123.1_Chaetura_pelagica              0.58%    failed      0.00%
+   2  MN356130.1_Eurypyga_helias                0.76%    failed      0.25%
+   3  MN356131.1_Fulmarus_glacialis             0.62%    passed     11.48%
+   4  MN356134.1_Haliaeetus_leucocephalus       0.62%    failed      0.00%
+   5  MN356143.1_Phalacrocorax_carbo            0.66%    failed      0.00%
+   6  MN356147.1_Pterocles_gutturalis           0.65%    failed      0.00%
+   7  MN356162.1_Nyctibius_bracteatus           0.66%    passed     35.40%
+   8  MN356220.1_Galbula_dea                    0.84%    failed      0.00%
+   9  MN356246.1_Nycticryphes_semicollaris      0.67%    passed     28.49%
+  10  MN356248.1_Rynchops_niger                 0.62%    passed     10.26%
+  11  MN356261.1_Rhinoptilus_africanus          0.59%    passed     43.30%
+  12  MN356289.1_Syrrhaptes_paradoxus           0.65%    failed      0.00%
+  13  MN356296.1_Fregetta_grallaria             0.66%    failed      0.25%
+  14  MN356314.1_Pluvianellus_socialis          0.72%    failed      3.38%
+  15  MN356323.1_Dromas_ardeola                 0.58%    passed     25.68%
+  16  MN356325.1_Pandion_haliaetus              0.68%    passed     10.50%
+  17  MN356335.1_Columbina_picui                0.73%    passed     65.46%
+  18  MN356342.1_Thalassarche_chlororhynchos    0.64%    passed     71.75%
+  19  MN356343.1_Anhinga_rufa                   0.63%    failed      0.12%
+  20  MN356418.1_Uria_aalge                     0.71%    failed      1.37%
+****  TOTAL                                     0.66%  11 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.013 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 217369)...
+
+NOTE: 35 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.274 / LogL: -121027.292
+Init pinv, alpha: 0.059, 1.000 / Estimate: 0.447, 0.938 / LogL: -120537.413
+Init pinv, alpha: 0.117, 1.000 / Estimate: 0.446, 0.933 / LogL: -120537.090
+Init pinv, alpha: 0.176, 1.000 / Estimate: 0.447, 0.936 / LogL: -120537.038
+Init pinv, alpha: 0.235, 1.000 / Estimate: 0.447, 0.937 / LogL: -120537.109
+Init pinv, alpha: 0.293, 1.000 / Estimate: 0.446, 0.934 / LogL: -120537.109
+Init pinv, alpha: 0.352, 1.000 / Estimate: 0.447, 0.937 / LogL: -120537.081
+Init pinv, alpha: 0.411, 1.000 / Estimate: 0.446, 0.936 / LogL: -120537.091
+Init pinv, alpha: 0.470, 1.000 / Estimate: 0.449, 0.952 / LogL: -120537.007
+Init pinv, alpha: 0.528, 1.000 / Estimate: 0.450, 0.960 / LogL: -120537.065
+Optimal pinv,alpha: 0.449, 0.952 / LogL: -120537.007
+
+Parameters optimization took 36.066 sec
+Computing ML distances based on estimated model parameters... 0.020 sec
+Computing BIONJ tree...
+0.053 seconds
+Log-likelihood of BIONJ tree: -120445.905
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.877 second
+Computing log-likelihood of 98 initial trees ... 4.509 seconds
+Current best score: -120445.905
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -120428.841
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -120421.812
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -120411.452
+Iteration 10 / LogL: -120411.464 / Time: 0h:0m:49s
+Iteration 20 / LogL: -120417.866 / Time: 0h:0m:56s
+Finish initializing candidate tree set (8)
+Current best tree score: -120411.452 / CPU time: 19.859
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -120422.255 / Time: 0h:1m:1s (0h:2m:34s left)
+Iteration 40 / LogL: -120416.972 / Time: 0h:1m:7s (0h:1m:48s left)
+Iteration 50 / LogL: -120424.504 / Time: 0h:1m:11s (0h:1m:17s left)
+Log-likelihood cutoff on original alignment: -120473.622
+Iteration 60 / LogL: -120417.026 / Time: 0h:1m:16s (0h:0m:55s left)
+Iteration 70 / LogL: -120416.961 / Time: 0h:1m:21s (0h:0m:38s left)
+Iteration 80 / LogL: -120417.516 / Time: 0h:1m:25s (0h:0m:25s left)
+Iteration 90 / LogL: -120416.914 / Time: 0h:1m:30s (0h:0m:13s left)
+Iteration 100 / LogL: -120417.536 / Time: 0h:1m:34s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -120473.622
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:1m:36s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -120411.452
+Optimal log-likelihood: -120411.448
+Rate parameters:  A-C: 3.69787  A-G: 9.55270  A-T: 2.04320  C-G: 0.25831  C-T: 20.07575  G-T: 1.00000
+Base frequencies:  A: 0.304  C: 0.310  G: 0.140  T: 0.245
+Proportion of invariable sites: 0.449
+Gamma shape alpha: 0.957
+Parameters optimization took 1 rounds (0.137 sec)
+BEST SCORE FOUND : -120411.448
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+6.659 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file all_sequences_muscle_alignment.fas.splits.nex
+Total tree length: 3.468
+
+Total number of iterations: 104
+CPU time used for tree search: 59.300 sec (0h:0m:59s)
+Wall-clock time used for tree search: 59.719 sec (0h:0m:59s)
+Total CPU time used: 102.712 sec (0h:1m:42s)
+Total wall-clock time used: 103.559 sec (0h:1m:43s)
+
+Computing bootstrap consensus tree...
+Reading input file all_sequences_muscle_alignment.fas.splits.nex...
+20 taxa and 136 splits.
+Consensus tree written to all_sequences_muscle_alignment.fas.contree
+Reading input trees file all_sequences_muscle_alignment.fas.contree
+Log-likelihood of consensus tree: -120411.448
+
+Analysis results written to: 
+  IQ-TREE report:                all_sequences_muscle_alignment.fas.iqtree
+  Maximum-likelihood tree:       all_sequences_muscle_alignment.fas.treefile
+  Likelihood distances:          all_sequences_muscle_alignment.fas.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          all_sequences_muscle_alignment.fas.splits.nex
+  Consensus tree:                all_sequences_muscle_alignment.fas.contree
+  Screen log file:               all_sequences_muscle_alignment.fas.log
+
+Date and Time: Thu Jan 30 16:26:02 2025

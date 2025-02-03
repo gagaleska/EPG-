@@ -1,0 +1,113 @@
+---
+title: "Exam"
+output: html_document
+date: "2025-01-31"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, warning = TRUE)
+```
+
+```{r message=FALSE, results='hide', warning=FALSE}
+library(dartR)
+library(tidyverse)
+library(reshape2)
+library(gplots)
+library(ggplot2)
+library(purrr)
+library(grid)
+```
+
+### How many individuals, populations, loci do you have in your dataset? Which populations do you have, please give the names. Which command did you use to do this? Before proceeding you need to run another command to check the validity of the data. What is this command?
+
+```{r}
+B <- read.PLINK(file="B.raw", map.file = "B.map")
+B
+B@pop
+B <- gl.compliance.check(B)
+```
+I have 60 individuals, 3 populations and 2000 loci. My populations are Barff Busen Norway and to find the names I used the command B@pop which gives me data about the populations in my dataset. To check the validity of the data I used the command B_check <- gl.compliance.check(B). 
+
+### Calculate the FST between populations and explain genetic differentiation. If present, give possible causes. 
+
+```{r}
+fst_values <- gl.fst.pop(B, nboots=100)
+fst_values
+```
+
+With FST value we can measure genetic distance between populations. FST indicates the likelihood that two randomly selected genes from two populations share a common origin. The FST values are ranging from 0 (no differentiation) to 1 (complete differentiation).
+Between Busen and Barff the FST value is 0.123 which suggests moderate genetic differentiation, but still low. Between Busen and Norway the FST is 0.068, meaning they have low genetic differentiation. And between Barff and Norway the FST value is 0.059, meaning there is even lower genetic differentiation.
+All p-values are 0, indicating statistical significance. I think some of the possible causes of genetic differentiation are:
+  - Geographic Barriers - if populations are geographically separated (e.g., islands, oceans, mountains, if they are on different continents), gene flow is reduced, leading to differentiation.
+  - Selection and local adaptation - environmental differences, such as climate, food sources can drive genetic divergence through natural selection.
+  - Genetic drift - in smaller populations, random genetic changes accumulate over time, leading to differentiation. Events like the bottleneck effect and the founder effect can lead to differentiation.
+  - Migration - in my dataset I have few species of birds, they can migrate easily and form new populations 
+
+
+
+```{r}
+fst_df_exam <- melt(as.matrix(fst_values$Fsts))
+colnames(fst_df_exam) <- c("Population1", "Population2", "FST")
+head(fst_df_exam)
+ggplot(fst_df_exam, aes(x = Population2, y = Population1, fill = FST)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red", name = "FST") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Pairwise FST Heatmap", x = "Population 1", y = "Population 2")
+```
+Here we can see the genetic differentiation corresponding to colors. White means there is a very low genetic differentiation, light red (pinkish) means there is a bit higher genetic differentiation and red or dark red means that there is a high genetic differentiations. 
+
+### Calculate and then produce a PCA plot. Explain what the plot represents (interpret the results of the analysis). What can you tell about the structure of your dataset? 
+
+```{r}
+pca <- gl.pcoa(B)
+gl.pcoa.plot(x = B, glPca = pca)
+```
+
+
+PCA (Principal component analysis) reduces the complexity of data sets while preserving the covariance (how two random variables are related) of the data.
+Scree plot (top)
+  - The y-axis represents the percentage of variance that is explained by each principal component (PC). The x-axis represents the PCA components. 
+  - The blue horizontal line represents a threshold for selecting informative PCs.
+  - The first few (two or three) PCs explain a significant proportion of variance (~10% for PC1, ~6% for PC2). After the first few PCs, the variance explained drops and stabilizes, indicating decrease of informative value. This suggests that only the first few PCs capture meaningful population structure, while later PCs may represent noise.
+Noise axes plot (bottom)
+  - This histogram shows the distribution of eigenvalues corresponding to the less informative dimensions.
+  - All eigenvalues are positive, meaning no negative variance components.
+  - The distribution is more or less uniform, indicating that these axes mostly represent background noise rather than meaningful structure.
+  - Since all eigenvalues are positive, the dataset has some structure rather than being completely random. The spread of eigenvalues suggests some weak signals beyond the first few PCs, but they are likely uninformative for distinguishing population groups.
+
+There is genetic structure in the dataset, with a few principal components capturing most of the variation. A small number of PCs (e.g., PC1 and PC2) are sufficient to describe most of the meaningful differences between individuals/populations. The remaining PCs likely represent background noise rather than true genetic differentiation. 
+
+```{r}
+gl.pcoa.plot(x = B, glPca = pca)
+```
+All three populations are well separated. Norway is well-separated along PCA Axis 2, showing distinct genetic variation, while Barff and Busen are mainly separated along PCA Axis 1, indicating stronger differentiation between them.
+
+```{r}
+gl.pcoa.plot(x = B, glPca = pca, zaxis = 3)
+```
+
+
+### How many populations are your study specimens included in the analysis divided into according to the molecular data? On the basis of which parameter can you make this conclusion? Use the arguments: k.range=1:10, num.k.rep=2, numreps=1000, burnin=1000, remember to specify other arguments. Graphically show the analysis of the structure of the populations. Interpret the results of the analysis of the structuring of the populations. 
+
+```{r}
+str<-gl.run.structure(B[,1:1000], k.range= 1:10, num.k.rep = 2, exec= "./structure", numreps=1000, burnin=1000)
+gl.plot.structure(str,K = 5)
+```
+The most important is the delta plot, which shows the best estimate of the number of populations (K).
+ΔK is highest at K = 2 (around 1500), indicating that the most likely number of populations in your dataset is 2. Beyond K = 2, the ΔK values drop significantly, suggesting that adding more clusters does not significantly improve the model fit.
+The conclusion is based on ΔK. The Evanno method suggests that the optimal K is where ΔK reaches its maximum. My plot clearly shows a peak at K = 2, supporting the conclusion.
+The top-left and top-right plots show mean LnP(K), which increases with K but fluctuates at higher values, meaning that while more clusters may be possible, the best-supported value is K = 2. The bottom-left plot (LnP''(K)) represents the second derivative of the likelihood, which also confirms the peak at K = 2.
+My dataset shows genetic structuring into two main populations, meaning that individuals within each group share more genetic similarity compared to individuals from different groups.
+
+
+
+
+
+
+
+
+
+
+

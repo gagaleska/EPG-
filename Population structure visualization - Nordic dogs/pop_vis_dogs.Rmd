@@ -103,6 +103,7 @@ The STRUCTURE program is used to analyze genotype data with multiple loci to exp
 
 ```{r}
 str <- gl.run.structure(dogs[,1:1000], k.range= 1:6, num.k.rep = 2, exec = "./structure", numreps=200, burnin=100)
+
 ```
 
 When it finishes, 4 graphs are drawn. For us, the $\Delta$K graph is important. If the graph is not displayed, use the command gl.evanno(str) $\Delta$K estimates the number of calculated subpopulations that best estimate the structure of our data. We look at $\Delta$K with the highest value. In this case, the highest value is 4, then 2.

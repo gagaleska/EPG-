@@ -1,0 +1,173 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fermat (AVX2, FMA3, 1009 GB RAM)
+Command: ../../iqtree -s all_sequences_muscle_alignment.fasta -m TESTONLY -AIC
+Seed:    194231 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jan 29 16:06:53 2025
+Kernel:  AVX+FMA - 1 threads (128 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 128 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file all_sequences_muscle_alignment.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 20 sequences with 14288 columns, 5484 distinct patterns
+5240 parsimony-informative, 1500 singleton sites, 7548 constant sites
+            Gap/Ambiguity  Composition  p-value
+   1  MN356123.1    0.58%    failed      0.00%
+   2  MN356130.1    0.76%    failed      0.25%
+   3  MN356131.1    0.62%    passed     11.48%
+   4  MN356134.1    0.62%    failed      0.00%
+   5  MN356143.1    0.66%    failed      0.00%
+   6  MN356147.1    0.65%    failed      0.00%
+   7  MN356162.1    0.66%    passed     35.40%
+   8  MN356220.1    0.84%    failed      0.00%
+   9  MN356246.1    0.67%    passed     28.49%
+  10  MN356248.1    0.62%    passed     10.26%
+  11  MN356261.1    0.59%    passed     43.30%
+  12  MN356289.1    0.65%    failed      0.00%
+  13  MN356296.1    0.66%    failed      0.25%
+  14  MN356314.1    0.72%    failed      3.38%
+  15  MN356323.1    0.58%    passed     25.68%
+  16  MN356325.1    0.68%    passed     10.50%
+  17  MN356335.1    0.73%    passed     65.46%
+  18  MN356342.1    0.64%    passed     71.75%
+  19  MN356343.1    0.63%    failed      0.12%
+  20  MN356418.1    0.71%    failed      1.37%
+****  TOTAL         0.66%  11 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.010 seconds
+NOTE: ModelFinder requires 14 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 14288) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            144981.581   37  290037.162   290037.359   290317.147
+  2  JC+I          132701.468   38  265478.936   265479.144   265766.488
+  3  JC+G4         131291.759   38  262659.518   262659.726   262947.070
+  4  JC+I+G4       131027.794   39  262133.588   262133.807   262428.708
+  5  F81+F         143704.225   40  287488.450   287488.680   287791.137
+  6  F81+F+I       130647.953   41  261377.906   261378.148   261688.160
+  7  F81+F+G4      129068.839   41  258219.679   258219.921   258529.933
+  8  F81+F+I+G4    128771.184   42  257626.368   257626.621   257944.189
+  9  K2P           139616.370   38  279308.740   279308.948   279596.292
+ 10  K2P+I         127046.461   39  254170.922   254171.141   254466.042
+ 11  K2P+G4        125404.283   39  250886.566   250886.785   251181.685
+ 12  K2P+I+G4      125068.617   40  250217.233   250217.463   250519.920
+ 13  HKY+F         137889.992   41  275861.983   275862.225   276172.237
+ 14  HKY+F+I       123865.881   42  247815.761   247816.015   248133.583
+ 15  HKY+F+G4      121979.950   42  244043.899   244044.153   244361.721
+ 16  HKY+F+I+G4    121493.216   43  243072.431   243072.697   243397.820
+ 17  TNe           138333.098   39  276744.196   276744.415   277039.316
+ 18  TNe+I         125912.253   40  251904.505   251904.735   252207.192
+ 19  TNe+G4        124242.439   40  248564.877   248565.108   248867.564
+ 20  TNe+I+G4      123740.622   41  247563.244   247563.486   247873.498
+ 21  TN+F          137486.384   42  275056.768   275057.022   275374.590
+ 22  TN+F+I        123685.811   43  247457.622   247457.887   247783.010
+ 23  TN+F+G4       121748.977   43  243583.954   243584.220   243909.343
+ 24  TN+F+I+G4     121195.350   44  242478.700   242478.978   242811.655
+ 25  K3P           138781.300   39  277640.601   277640.820   277935.721
+ 26  K3P+I         126112.674   40  252305.348   252305.578   252608.035
+ 27  K3P+G4        124537.352   40  249154.704   249154.935   249457.391
+ 28  K3P+I+G4      124221.297   41  248524.595   248524.836   248834.849
+ 29  K3Pu+F        137287.263   42  274658.526   274658.780   274976.347
+ 30  K3Pu+F+I      123472.521   43  247031.042   247031.308   247356.431
+ 31  K3Pu+F+G4     121676.929   43  243439.859   243440.124   243765.247
+ 32  K3Pu+F+I+G4   121220.349   44  242528.698   242528.976   242861.653
+ 33  TPM2+F        136412.659   42  272909.319   272909.572   273227.140
+ 34  TPM2+F+I      123057.718   43  246201.435   246201.701   246526.824
+ 35  TPM2+F+G4     121290.660   43  242667.321   242667.586   242992.709
+ 36  TPM2+F+I+G4   120875.625   44  241839.251   241839.529   242172.207
+ 37  TPM2u+F       136412.674   42  272909.349   272909.602   273227.170
+ 38  TPM2u+F+I     123057.690   43  246201.379   246201.645   246526.768
+ 39  TPM2u+F+G4    121290.751   43  242667.503   242667.769   242992.891
+ 40  TPM2u+F+I+G4  120875.652   44  241839.303   241839.581   242172.259
+ 41  TPM3+F        137445.621   42  274975.243   274975.496   275293.064
+ 42  TPM3+F+I      123777.458   43  247640.915   247641.181   247966.304
+ 43  TPM3+F+G4     121947.416   43  243980.832   243981.097   244306.220
+ 44  TPM3+F+I+G4   121465.874   44  243019.747   243020.025   243352.703
+ 45  TPM3u+F       137445.637   42  274975.275   274975.528   275293.096
+ 46  TPM3u+F+I     123777.456   43  247640.912   247641.177   247966.300
+ 47  TPM3u+F+G4    121947.406   43  243980.812   243981.078   244306.201
+ 48  TPM3u+F+I+G4  121465.877   44  243019.754   243020.032   243352.710
+ 49  TIMe          137489.701   40  275059.402   275059.632   275362.089
+ 50  TIMe+I        124972.290   41  250026.580   250026.822   250336.834
+ 51  TIMe+G4       123345.762   41  246773.524   246773.765   247083.778
+ 52  TIMe+I+G4     122864.884   42  245813.767   245814.021   246131.589
+ 53  TIM+F         136880.519   43  273847.038   273847.303   274172.426
+ 54  TIM+F+I       123288.764   44  246665.528   246665.806   246998.484
+ 55  TIM+F+G4      121423.931   44  242935.863   242936.141   243268.818
+ 56  TIM+F+I+G4    120906.812   45  241903.623   241903.914   242244.146
+ 57  TIM2e         135682.401   40  271444.801   271445.032   271747.488
+ 58  TIM2e+I       123844.158   41  247770.315   247770.557   248080.569
+ 59  TIM2e+G4      122236.428   41  244554.857   244555.099   244865.111
+ 60  TIM2e+I+G4    121811.083   42  243706.166   243706.420   244023.988
+ 61  TIM2+F        136040.225   43  272166.450   272166.715   272491.838
+ 62  TIM2+F+I      122873.113   44  245834.226   245834.505   246167.182
+ 63  TIM2+F+G4     121055.228   44  242198.457   242198.735   242531.412
+ 64  TIM2+F+I+G4   120560.129   45  241210.258   241210.549   241550.781
+ 65  TIM3e         137694.431   40  275468.862   275469.092   275771.549
+ 66  TIM3e+I       125781.741   41  251645.481   251645.723   251955.736
+ 67  TIM3e+G4      124111.732   41  248305.463   248305.705   248615.718
+ 68  TIM3e+I+G4    123617.172   42  247318.345   247318.598   247636.166
+ 69  TIM3+F        137032.131   43  274150.262   274150.527   274475.650
+ 70  TIM3+F+I      123599.697   44  247287.395   247287.673   247620.351
+ 71  TIM3+F+G4     121709.291   44  243506.583   243506.861   243839.538
+ 72  TIM3+F+I+G4   121170.225   45  242430.451   242430.741   242770.973
+ 73  TVMe          136239.831   41  272561.663   272561.905   272871.917
+ 74  TVMe+I        124727.312   42  249538.623   249538.877   249856.444
+ 75  TVMe+G4       122944.256   42  245972.512   245972.765   246290.333
+ 76  TVMe+I+G4     122639.448   43  245364.897   245365.162   245690.285
+ 77  TVM+F         135957.150   44  272002.300   272002.578   272335.256
+ 78  TVM+F+I       122904.670   45  245899.341   245899.631   246239.864
+ 79  TVM+F+G4      121188.736   45  242467.473   242467.763   242807.996
+ 80  TVM+F+I+G4    120776.922   46  241645.844   241646.148   241993.934
+ 81  SYM           134989.816   42  270063.633   270063.886   270381.454
+ 82  SYM+I         123530.495   43  247146.991   247147.257   247472.380
+ 83  SYM+G4        121955.295   43  243996.591   243996.856   244321.979
+ 84  SYM+I+G4      121530.259   44  243148.517   243148.795   243481.473
+ 85  GTR+F         135575.819   45  271241.639   271241.930   271582.162
+ 86  GTR+F+I       122723.401   46  245538.802   245539.106   245886.892
+ 87  GTR+F+G4      120946.653   46  241985.307   241985.610   242333.397
+ 88  GTR+F+I+G4    120464.783   47  241023.566   241023.883   241379.223
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: GTR+F+I+G4
+Bayesian Information Criterion:         GTR+F+I+G4
+Best-fit model: GTR+F+I+G4 chosen according to AIC
+
+All model information printed to all_sequences_muscle_alignment.fasta.model.gz
+CPU time for ModelFinder: 40.408 seconds (0h:0m:40s)
+Wall-clock time for ModelFinder: 40.724 seconds (0h:0m:40s)
+
+NOTE: 14 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.274 / LogL: -120946.652
+Init pinv, alpha: 0.059, 1.000 / Estimate: 0.449, 0.957 / LogL: -120464.427
+Init pinv, alpha: 0.117, 1.000 / Estimate: 0.448, 0.953 / LogL: -120464.484
+Init pinv, alpha: 0.176, 1.000 / Estimate: 0.448, 0.954 / LogL: -120464.700
+Init pinv, alpha: 0.235, 1.000 / Estimate: 0.448, 0.953 / LogL: -120464.618
+Init pinv, alpha: 0.293, 1.000 / Estimate: 0.448, 0.954 / LogL: -120464.592
+Init pinv, alpha: 0.352, 1.000 / Estimate: 0.448, 0.953 / LogL: -120464.580
+Init pinv, alpha: 0.411, 1.000 / Estimate: 0.448, 0.953 / LogL: -120464.572
+Init pinv, alpha: 0.470, 1.000 / Estimate: 0.449, 0.962 / LogL: -120464.558
+Init pinv, alpha: 0.528, 1.000 / Estimate: 0.449, 0.962 / LogL: -120464.542
+Optimal pinv,alpha: 0.449, 0.957 / LogL: -120464.427
+
+Parameters optimization took 38.055 sec
+BEST SCORE FOUND : -120464.427
+Total tree length: 3.469
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 37.988 sec (0h:0m:37s)
+Total wall-clock time used: 38.237 sec (0h:0m:38s)
+
+Analysis results written to: 
+  IQ-TREE report:                all_sequences_muscle_alignment.fasta.iqtree
+  Tree used for ModelFinder:     all_sequences_muscle_alignment.fasta.treefile
+  Screen log file:               all_sequences_muscle_alignment.fasta.log
+
+Date and Time: Wed Jan 29 16:08:12 2025

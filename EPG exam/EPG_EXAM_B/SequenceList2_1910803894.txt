@@ -1,0 +1,80 @@
+
+1. Syrrhaptes paradoxus mitochondrion, partial genome
+22,005 bp linear DNA 
+MN356289.1 GI:1910804579
+
+2. Columbina picui mitochondrion, partial genome
+22,004 bp linear DNA 
+MN356335.1 GI:1910804784
+
+3. Chaetura pelagica mitochondrion, partial genome
+21,044 bp linear DNA 
+MN356123.1 GI:1910803966
+
+4. Fregetta grallaria mitochondrion, partial genome
+20,251 bp linear DNA 
+MN356296.1 GI:1910804619
+
+5. Dromas ardeola mitochondrion, partial genome
+20,042 bp linear DNA 
+MN356323.1 GI:1910804699
+
+6. Phalacrocorax carbo mitochondrion, partial genome
+19,765 bp linear DNA 
+MN356143.1 GI:1910804160
+
+7. Anhinga rufa mitochondrion, partial genome
+19,692 bp linear DNA 
+MN356343.1 GI:1910804826
+
+8. Thalassarche chlororhynchos mitochondrion, partial genome
+18,907 bp linear DNA 
+MN356342.1 GI:1910804812
+
+9. Pluvianellus socialis mitochondrion, partial genome
+18,893 bp linear DNA 
+MN356314.1 GI:1910804685
+
+10. Galbula dea mitochondrion, partial genome
+18,788 bp linear DNA 
+MN356220.1 GI:1910804414
+
+11. Fulmarus glacialis mitochondrion, partial genome
+18,723 bp linear DNA 
+MN356131.1 GI:1910804032
+
+12. Haliaeetus leucocephalus mitochondrion, partial genome
+18,645 bp linear DNA 
+MN356134.1 GI:1910804072
+
+13. Nycticryphes semicollaris mitochondrion, partial genome
+18,584 bp linear DNA 
+MN356246.1 GI:1910804467
+
+14. Pterocles gutturalis mitochondrion, partial genome
+18,354 bp linear DNA 
+MN356147.1 GI:1910804199
+
+15. Eurypyga helias mitochondrion, partial genome
+18,213 bp linear DNA 
+MN356130.1 GI:1910804018
+
+16. Pandion haliaetus mitochondrion, partial genome
+18,153 bp linear DNA 
+MN356325.1 GI:1910804728
+
+17. Rynchops niger mitochondrion, partial genome
+18,130 bp linear DNA 
+MN356248.1 GI:1910804481
+
+18. Uria aalge mitochondrion, partial genome
+18,089 bp linear DNA 
+MN356418.1 GI:1910805040
+
+19. Rhinoptilus africanus mitochondrion, partial genome
+18,084 bp linear DNA 
+MN356261.1 GI:1910804509
+
+20. Nyctibius bracteatus mitochondrion, partial genome
+18,041 bp linear DNA 
+MN356162.1 GI:1910804303

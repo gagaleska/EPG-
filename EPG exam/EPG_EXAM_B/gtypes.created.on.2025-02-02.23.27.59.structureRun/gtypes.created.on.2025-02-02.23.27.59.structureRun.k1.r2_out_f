@@ -1,0 +1,5935 @@
+
+
+----------------------------------------------------
+STRUCTURE by Pritchard, Stephens and Donnelly (2000)
+     and Falush, Stephens and Pritchard (2003)
+       Code by Pritchard, Falush and Hubisz
+             Version 2.3.4 (Jul 2012)
+----------------------------------------------------
+
+
+
+Command line arguments:   ./structure -m gtypes.created.on.2025-02-02.23.27.59.structureRun/gtypes.created.on.2025-02-02.23.27.59.structureRun.k1.r2_mainparams -e gtypes.created.on.2025-02-02.23.27.59.structureRun/gtypes.created.on.2025-02-02.23.27.59.structureRun.k1.r2_extraparams -i gtypes.created.on.2025-02-02.23.27.59.structureRun/gtypes.created.on.2025-02-02.23.27.59.structureRun.k1.r2_data -o gtypes.created.on.2025-02-02.23.27.59.structureRun/gtypes.created.on.2025-02-02.23.27.59.structureRun.k1.r2_out 
+Input File:    gtypes.created.on.2025-02-02.23.27.59.structureRun/gtypes.created.on.2025-02-02.23.27.59.structureRun.k1.r2_data
+
+Run parameters:
+   60 individuals
+   1000 loci
+   1 populations assumed
+   1000 Burn-in period
+   1000 Reps
+NO ADMIXTURE model assumed
+
+
+--------------------------------------------
+Proportion of membership of each pre-defined
+ population in each of the 1 clusters
+
+Given    Inferred Clusters       Number of
+ Pop       1                    Individuals
+
+  1:     1.000                     20
+  2:     1.000                     19
+  3:     1.000                     21
+--------------------------------------------
+
+Allele-freq. divergence among pops (Net nucleotide distance),
+computed using point estimates of P.
+
+      1      
+ 1      -    
+
+Average distances (expected heterozygosity) between individuals in same cluster:
+cluster  1  : 0.1664 
+
+--------------------------------------------
+Estimated Ln Prob of Data   = -28405.9
+Mean value of ln likelihood = -28183.6
+Variance of ln likelihood   = 444.7
+Allele frequencies uncorrelated
+
+
+Inferred ancestry of individuals:
+        Label (%Miss) Pop:  Inferred clusters
+  1 sample10.re   (28)    2 :  1.000 
+  2 sample101.r    (1)    2 :  1.000 
+  3 sample102.r    (2)    2 :  1.000 
+  4 sample105.r    (3)    2 :  1.000 
+  5 sample13.re   (10)    2 :  1.000 
+  6 sample14.re    (1)    2 :  1.000 
+  7 sample15.re    (1)    2 :  1.000 
+  8 sample16.re    (0)    2 :  1.000 
+  9 sample18.re    (3)    2 :  1.000 
+ 10 sample19.re    (8)    2 :  1.000 
+ 11 sample20.re   (37)    2 :  1.000 
+ 12 sample21.re    (0)    2 :  1.000 
+ 13 sample22.re    (1)    2 :  1.000 
+ 14 sample23.re    (2)    2 :  1.000 
+ 15 sample24.re   (27)    2 :  1.000 
+ 16 sample25.re    (0)    2 :  1.000 
+ 17 sample26.re    (0)    2 :  1.000 
+ 18 sample27.re    (0)    2 :  1.000 
+ 19 sample28.re    (5)    1 :  1.000 
+ 20 sample29.re    (4)    1 :  1.000 
+ 21 sample30.re    (1)    1 :  1.000 
+ 22 sample32.re    (3)    2 :  1.000 
+ 23 sample33.re    (3)    1 :  1.000 
+ 24 sample42.re   (64)    1 :  1.000 
+ 25 sample43.re   (94)    1 :  1.000 
+ 26 sample46.re    (0)    1 :  1.000 
+ 27 sample48.re    (0)    1 :  1.000 
+ 28 sample49.re    (0)    1 :  1.000 
+ 29 sample50.re    (9)    1 :  1.000 
+ 30 sample51.re    (2)    1 :  1.000 
+ 31 sample52.re    (2)    1 :  1.000 
+ 32 sample53.re    (4)    1 :  1.000 
+ 33 sample54.re    (6)    1 :  1.000 
+ 34 sample55.re    (3)    1 :  1.000 
+ 35 sample56.re    (4)    1 :  1.000 
+ 36 sample57.re    (1)    1 :  1.000 
+ 37 sample58.re    (2)    1 :  1.000 
+ 38 sample59.re    (2)    1 :  1.000 
+ 39 sample60.re   (25)    1 :  1.000 
+ 40 sampleN15.r    (1)    3 :  1.000 
+ 41 sampleN16.r    (1)    3 :  1.000 
+ 42 sampleN17.r    (0)    3 :  1.000 
+ 43 sampleN26.r    (1)    3 :  1.000 
+ 44 sampleN30.r    (5)    3 :  1.000 
+ 45 sampleN34.r    (0)    3 :  1.000 
+ 46 sampleN35.r    (6)    3 :  1.000 
+ 47 sampleN36.r   (11)    3 :  1.000 
+ 48 sampleN37.r    (2)    3 :  1.000 
+ 49 sampleN38.r    (6)    3 :  1.000 
+ 50 sampleN39.r    (1)    3 :  1.000 
+ 51 sampleN40.r    (7)    3 :  1.000 
+ 52 sampleN41.r    (8)    3 :  1.000 
+ 53 sampleN42.r    (2)    3 :  1.000 
+ 54 sampleN43.r    (6)    3 :  1.000 
+ 55 sampleN44.r   (14)    3 :  1.000 
+ 56 sampleN45.r    (3)    3 :  1.000 
+ 57 sampleN46.r    (4)    3 :  1.000 
+ 58 sampleN48.r   (15)    3 :  1.000 
+ 59 sampleN49.r    (5)    3 :  1.000 
+ 60 sampleN50.r    (7)    3 :  1.000 
+
+
+Estimated Allele Frequencies in each cluster
+
+
+Locus 1 : 10_21_T_C 
+2 alleles
+13.3% missing data
+   0   0.602 
+   1   0.398 
+
+Locus 2 : 10_21_T_HET 
+2 alleles
+13.3% missing data
+   0   0.735 
+   1   0.265 
+
+Locus 3 : 1036_28_G_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 4 : 1036_28_G_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 5 : 1069_77_C_C 
+2 alleles
+8.3% missing data
+   0   0.964 
+   1   0.036 
+
+Locus 6 : 1069_77_C_HET 
+2 alleles
+8.3% missing data
+   0   0.964 
+   1   0.036 
+
+Locus 7 : 1069_83_A_C 
+2 alleles
+8.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 8 : 1069_83_A_HET 
+2 alleles
+8.3% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 9 : 1070_110_A_0 
+1 alleles
+26.7% missing data
+   0   1.000 
+
+Locus 10 : 1070_110_A_HET 
+1 alleles
+26.7% missing data
+   0   1.000 
+
+Locus 11 : 1070_58_C_0 
+1 alleles
+25.0% missing data
+   0   1.000 
+
+Locus 12 : 1070_58_C_HET 
+1 alleles
+25.0% missing data
+   0   1.000 
+
+Locus 13 : 1093_16_G_C 
+2 alleles
+13.3% missing data
+   1   0.464 
+   0   0.536 
+
+Locus 14 : 1093_16_G_HET 
+2 alleles
+13.3% missing data
+   0   0.763 
+   1   0.237 
+
+Locus 15 : 1130_46_G_C 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 16 : 1130_46_G_HET 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 17 : 1130_83_C_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 18 : 1130_83_C_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 19 : 115_12_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 20 : 115_12_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 21 : 1155_62_G_C 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 22 : 1155_62_G_HET 
+2 alleles
+5.0% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 23 : 1166_33_A_C 
+2 alleles
+8.3% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 24 : 1166_33_A_HET 
+2 alleles
+8.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 25 : 1166_38_A_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 26 : 1166_38_A_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 27 : 1177_43_A_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 28 : 1177_43_A_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 29 : 1177_44_C_C 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 30 : 1177_44_C_HET 
+2 alleles
+1.7% missing data
+   0   0.976 
+   1   0.024 
+
+Locus 31 : 1177_6_T_C 
+2 alleles
+1.7% missing data
+   0   0.908 
+   1   0.092 
+
+Locus 32 : 1177_6_T_HET 
+2 alleles
+1.7% missing data
+   0   0.908 
+   1   0.092 
+
+Locus 33 : 1180_65_C_C 
+2 alleles
+11.7% missing data
+   0   0.852 
+   1   0.148 
+
+Locus 34 : 1180_65_C_HET 
+2 alleles
+11.7% missing data
+   0   0.907 
+   1   0.093 
+
+Locus 35 : 1180_96_T_C 
+2 alleles
+11.7% missing data
+   0   0.852 
+   1   0.148 
+
+Locus 36 : 1180_96_T_HET 
+2 alleles
+11.7% missing data
+   0   0.907 
+   1   0.093 
+
+Locus 37 : 1185_26_T_0 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 38 : 1185_26_T_HET 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 39 : 1186_12_A_0 
+1 alleles
+10.0% missing data
+   0   1.000 
+
+Locus 40 : 1186_12_A_HET 
+1 alleles
+10.0% missing data
+   0   1.000 
+
+Locus 41 : 1202_6_C_C 
+2 alleles
+26.7% missing data
+   0   0.720 
+   1   0.280 
+
+Locus 42 : 1202_6_C_HET 
+2 alleles
+26.7% missing data
+   0   0.790 
+   1   0.210 
+
+Locus 43 : 1206_95_T_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 44 : 1206_95_T_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 45 : 1210_28_C_C 
+2 alleles
+10.0% missing data
+   0   0.599 
+   1   0.401 
+
+Locus 46 : 1210_28_C_HET 
+2 alleles
+10.0% missing data
+   0   0.762 
+   1   0.238 
+
+Locus 47 : 1210_8_G_C 
+2 alleles
+6.7% missing data
+   0   0.861 
+   1   0.139 
+
+Locus 48 : 1210_8_G_HET 
+2 alleles
+6.7% missing data
+   0   0.860 
+   1   0.140 
+
+Locus 49 : 1227_26_C_C 
+2 alleles
+3.3% missing data
+   1   0.355 
+   0   0.645 
+
+Locus 50 : 1227_26_C_HET 
+2 alleles
+3.3% missing data
+   0   0.746 
+   1   0.254 
+
+Locus 51 : 1234_34_A_C 
+2 alleles
+11.7% missing data
+   0   0.695 
+   1   0.305 
+
+Locus 52 : 1234_34_A_HET 
+2 alleles
+11.7% missing data
+   0   0.751 
+   1   0.249 
+
+Locus 53 : 1234_9_C_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 54 : 1234_9_C_HET 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 55 : 1258_82_A_C 
+2 alleles
+3.3% missing data
+   0   0.873 
+   1   0.127 
+
+Locus 56 : 1258_82_A_HET 
+2 alleles
+3.3% missing data
+   0   0.924 
+   1   0.076 
+
+Locus 57 : 1263_18_G_C 
+2 alleles
+8.3% missing data
+   0   0.715 
+   1   0.285 
+
+Locus 58 : 1263_18_G_HET 
+2 alleles
+8.3% missing data
+   0   0.804 
+   1   0.196 
+
+Locus 59 : 1274_22_T_C 
+2 alleles
+11.7% missing data
+   0   0.682 
+   1   0.318 
+
+Locus 60 : 1274_22_T_HET 
+2 alleles
+11.7% missing data
+   0   0.775 
+   1   0.225 
+
+Locus 61 : 1274_53_G_C 
+2 alleles
+11.7% missing data
+   0   0.684 
+   1   0.316 
+
+Locus 62 : 1274_53_G_HET 
+2 alleles
+11.7% missing data
+   0   0.779 
+   1   0.221 
+
+Locus 63 : 1278_35_A_C 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 64 : 1278_35_A_HET 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 65 : 1278_54_G_C 
+2 alleles
+3.3% missing data
+   0   0.718 
+   1   0.282 
+
+Locus 66 : 1278_54_G_HET 
+2 alleles
+3.3% missing data
+   0   0.805 
+   1   0.195 
+
+Locus 67 : 1278_89_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 68 : 1278_89_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 69 : 1283_15_G_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 70 : 1283_15_G_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 71 : 1283_38_G_C 
+2 alleles
+6.7% missing data
+   1   0.419 
+   0   0.581 
+
+Locus 72 : 1283_38_G_HET 
+2 alleles
+6.7% missing data
+   0   0.720 
+   1   0.280 
+
+Locus 73 : 1302_103_A_C 
+2 alleles
+18.3% missing data
+   0   0.961 
+   1   0.039 
+
+Locus 74 : 1302_103_A_HET 
+2 alleles
+18.3% missing data
+   0   0.961 
+   1   0.039 
+
+Locus 75 : 1302_54_G_0 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 76 : 1302_54_G_HET 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 77 : 1302_61_T_C 
+2 alleles
+16.7% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 78 : 1302_61_T_HET 
+2 alleles
+16.7% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 79 : 1356_103_A_C 
+2 alleles
+3.3% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 80 : 1356_103_A_HET 
+2 alleles
+3.3% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 81 : 1356_13_C_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 82 : 1356_13_C_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 83 : 1358_39_A_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 84 : 1358_39_A_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 85 : 1358_67_C_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 86 : 1358_67_C_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 87 : 1361_94_A_0 
+1 alleles
+35.0% missing data
+   0   1.000 
+
+Locus 88 : 1361_94_A_HET 
+1 alleles
+35.0% missing data
+   0   1.000 
+
+Locus 89 : 1366_82_G_C 
+2 alleles
+11.7% missing data
+   0   0.729 
+   1   0.271 
+
+Locus 90 : 1366_82_G_HET 
+2 alleles
+11.7% missing data
+   0   0.732 
+   1   0.268 
+
+Locus 91 : 1369_28_C_C 
+2 alleles
+13.3% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 92 : 1369_28_C_HET 
+2 alleles
+13.3% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 93 : 1373_59_T_C 
+2 alleles
+5.0% missing data
+   0   0.870 
+   1   0.130 
+
+Locus 94 : 1373_59_T_HET 
+2 alleles
+5.0% missing data
+   0   0.888 
+   1   0.112 
+
+Locus 95 : 1373_73_C_C 
+2 alleles
+5.0% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 96 : 1373_73_C_HET 
+2 alleles
+5.0% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 97 : 138_96_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 98 : 138_96_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 99 : 1387_29_C_C 
+2 alleles
+1.7% missing data
+   0   0.858 
+   1   0.142 
+
+Locus 100 : 1387_29_C_HET 
+2 alleles
+1.7% missing data
+   0   0.875 
+   1   0.125 
+
+Locus 101 : 139_43_C_C 
+2 alleles
+23.3% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 102 : 139_43_C_HET 
+2 alleles
+23.3% missing data
+   0   0.968 
+   1   0.032 
+
+Locus 103 : 140_95_A_C 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 104 : 140_95_A_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 105 : 141_59_C_0 
+1 alleles
+15.0% missing data
+   0   1.000 
+
+Locus 106 : 141_59_C_HET 
+1 alleles
+15.0% missing data
+   0   1.000 
+
+Locus 107 : 1452_104_T_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 108 : 1452_104_T_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 109 : 1476_25_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 110 : 1476_25_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 111 : 1481_88_A_C 
+2 alleles
+0.0% missing data
+   0   0.960 
+   1   0.040 
+
+Locus 112 : 1481_88_A_HET 
+2 alleles
+0.0% missing data
+   0   0.959 
+   1   0.041 
+
+Locus 113 : 1499_30_A_0 
+1 alleles
+20.0% missing data
+   0   1.000 
+
+Locus 114 : 1499_30_A_HET 
+1 alleles
+20.0% missing data
+   0   1.000 
+
+Locus 115 : 1499_40_C_C 
+2 alleles
+23.3% missing data
+   0   0.894 
+   1   0.106 
+
+Locus 116 : 1499_40_C_HET 
+2 alleles
+23.3% missing data
+   0   0.915 
+   1   0.085 
+
+Locus 117 : 1529_78_C_C 
+2 alleles
+1.7% missing data
+   0   0.950 
+   1   0.050 
+
+Locus 118 : 1529_78_C_HET 
+2 alleles
+1.7% missing data
+   0   0.950 
+   1   0.050 
+
+Locus 119 : 153_110_T_C 
+2 alleles
+11.7% missing data
+   0   0.831 
+   1   0.169 
+
+Locus 120 : 153_110_T_HET 
+2 alleles
+11.7% missing data
+   0   0.870 
+   1   0.130 
+
+Locus 121 : 153_16_G_C 
+2 alleles
+3.3% missing data
+   0   0.949 
+   1   0.051 
+
+Locus 122 : 153_16_G_HET 
+2 alleles
+3.3% missing data
+   0   0.949 
+   1   0.051 
+
+Locus 123 : 1534_79_T_C 
+2 alleles
+8.3% missing data
+   0   0.901 
+   1   0.099 
+
+Locus 124 : 1534_79_T_HET 
+2 alleles
+8.3% missing data
+   0   0.901 
+   1   0.099 
+
+Locus 125 : 1536_24_C_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 126 : 1536_24_C_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 127 : 1544_7_A_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 128 : 1544_7_A_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 129 : 1544_98_C_C 
+2 alleles
+8.3% missing data
+   0   0.812 
+   1   0.188 
+
+Locus 130 : 1544_98_C_HET 
+2 alleles
+8.3% missing data
+   0   0.867 
+   1   0.133 
+
+Locus 131 : 1563_38_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 132 : 1563_38_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 133 : 1581_81_A_C 
+2 alleles
+8.3% missing data
+   0   0.936 
+   1   0.064 
+
+Locus 134 : 1581_81_A_HET 
+2 alleles
+8.3% missing data
+   0   0.937 
+   1   0.063 
+
+Locus 135 : 1618_100_T_C 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 136 : 1618_100_T_HET 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 137 : 1619_102_C_C 
+2 alleles
+5.0% missing data
+   0   0.886 
+   1   0.114 
+
+Locus 138 : 1619_102_C_HET 
+2 alleles
+5.0% missing data
+   0   0.889 
+   1   0.111 
+
+Locus 139 : 1626_98_C_C 
+2 alleles
+3.3% missing data
+   0   0.890 
+   1   0.110 
+
+Locus 140 : 1626_98_C_HET 
+2 alleles
+3.3% missing data
+   0   0.891 
+   1   0.109 
+
+Locus 141 : 1666_82_T_C 
+2 alleles
+13.3% missing data
+   0   0.838 
+   1   0.162 
+
+Locus 142 : 1666_82_T_HET 
+2 alleles
+13.3% missing data
+   0   0.857 
+   1   0.143 
+
+Locus 143 : 167_95_C_C 
+2 alleles
+3.3% missing data
+   0   0.500 
+   1   0.500 
+
+Locus 144 : 167_95_C_HET 
+2 alleles
+3.3% missing data
+   0   0.671 
+   1   0.329 
+
+Locus 145 : 1676_16_A_C 
+2 alleles
+10.0% missing data
+   0   0.864 
+   1   0.136 
+
+Locus 146 : 1676_16_A_HET 
+2 alleles
+10.0% missing data
+   0   0.862 
+   1   0.138 
+
+Locus 147 : 1676_26_G_C 
+2 alleles
+10.0% missing data
+   0   0.534 
+   1   0.466 
+
+Locus 148 : 1676_26_G_HET 
+2 alleles
+10.0% missing data
+   0   0.755 
+   1   0.245 
+
+Locus 149 : 1676_81_G_C 
+2 alleles
+5.0% missing data
+   0   0.888 
+   1   0.112 
+
+Locus 150 : 1676_81_G_HET 
+2 alleles
+5.0% missing data
+   0   0.905 
+   1   0.095 
+
+Locus 151 : 1676_86_A_C 
+2 alleles
+6.7% missing data
+   0   0.887 
+   1   0.113 
+
+Locus 152 : 1676_86_A_HET 
+2 alleles
+6.7% missing data
+   0   0.904 
+   1   0.096 
+
+Locus 153 : 1699_110_A_C 
+2 alleles
+16.7% missing data
+   0   0.647 
+   1   0.353 
+
+Locus 154 : 1699_110_A_HET 
+2 alleles
+16.7% missing data
+   0   0.742 
+   1   0.258 
+
+Locus 155 : 1699_66_T_C 
+2 alleles
+11.7% missing data
+   0   0.900 
+   1   0.100 
+
+Locus 156 : 1699_66_T_HET 
+2 alleles
+11.7% missing data
+   0   0.897 
+   1   0.103 
+
+Locus 157 : 1711_39_A_C 
+2 alleles
+10.0% missing data
+   0   0.891 
+   1   0.109 
+
+Locus 158 : 1711_39_A_HET 
+2 alleles
+10.0% missing data
+   0   0.892 
+   1   0.108 
+
+Locus 159 : 1755_87_C_C 
+2 alleles
+26.7% missing data
+   0   0.978 
+   1   0.022 
+
+Locus 160 : 1755_87_C_HET 
+2 alleles
+26.7% missing data
+   0   0.978 
+   1   0.022 
+
+Locus 161 : 1756_101_A_C 
+2 alleles
+8.3% missing data
+   0   0.731 
+   1   0.269 
+
+Locus 162 : 1756_101_A_HET 
+2 alleles
+8.3% missing data
+   0   0.839 
+   1   0.161 
+
+Locus 163 : 1756_14_A_C 
+2 alleles
+8.3% missing data
+   0   0.726 
+   1   0.274 
+
+Locus 164 : 1756_14_A_HET 
+2 alleles
+8.3% missing data
+   0   0.829 
+   1   0.171 
+
+Locus 165 : 1756_43_A_C 
+2 alleles
+6.7% missing data
+   0   0.956 
+   1   0.044 
+
+Locus 166 : 1756_43_A_HET 
+2 alleles
+6.7% missing data
+   0   0.957 
+   1   0.043 
+
+Locus 167 : 1756_48_T_C 
+2 alleles
+8.3% missing data
+   0   0.733 
+   1   0.267 
+
+Locus 168 : 1756_48_T_HET 
+2 alleles
+8.3% missing data
+   0   0.838 
+   1   0.162 
+
+Locus 169 : 1811_108_A_C 
+2 alleles
+1.7% missing data
+   0   0.908 
+   1   0.092 
+
+Locus 170 : 1811_108_A_HET 
+2 alleles
+1.7% missing data
+   0   0.908 
+   1   0.092 
+
+Locus 171 : 1820_54_A_C 
+2 alleles
+8.3% missing data
+   0   0.902 
+   1   0.098 
+
+Locus 172 : 1820_54_A_HET 
+2 alleles
+8.3% missing data
+   0   0.902 
+   1   0.098 
+
+Locus 173 : 183_99_C_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 174 : 183_99_C_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 175 : 1834_16_A_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 176 : 1834_16_A_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 177 : 1841_60_A_C 
+2 alleles
+5.0% missing data
+   0   0.940 
+   1   0.060 
+
+Locus 178 : 1841_60_A_HET 
+2 alleles
+5.0% missing data
+   0   0.939 
+   1   0.061 
+
+Locus 179 : 1852_92_G_C 
+2 alleles
+8.3% missing data
+   0   0.850 
+   1   0.150 
+
+Locus 180 : 1852_92_G_HET 
+2 alleles
+8.3% missing data
+   0   0.866 
+   1   0.134 
+
+Locus 181 : 1869_78_A_C 
+2 alleles
+11.7% missing data
+   0   0.780 
+   1   0.220 
+
+Locus 182 : 1869_78_A_HET 
+2 alleles
+11.7% missing data
+   0   0.834 
+   1   0.166 
+
+Locus 183 : 1872_18_T_C 
+2 alleles
+16.7% missing data
+   0   0.902 
+   1   0.098 
+
+Locus 184 : 1872_18_T_HET 
+2 alleles
+16.7% missing data
+   0   0.901 
+   1   0.099 
+
+Locus 185 : 1882_76_T_C 
+2 alleles
+13.3% missing data
+   0   0.961 
+   1   0.039 
+
+Locus 186 : 1882_76_T_HET 
+2 alleles
+13.3% missing data
+   0   0.962 
+   1   0.038 
+
+Locus 187 : 19_14_A_C 
+2 alleles
+11.7% missing data
+   0   0.787 
+   1   0.213 
+
+Locus 188 : 19_14_A_HET 
+2 alleles
+11.7% missing data
+   0   0.899 
+   1   0.101 
+
+Locus 189 : 19_62_T_C 
+2 alleles
+11.7% missing data
+   0   0.639 
+   1   0.361 
+
+Locus 190 : 19_62_T_HET 
+2 alleles
+11.7% missing data
+   0   0.749 
+   1   0.251 
+
+Locus 191 : 1905_30_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 192 : 1905_30_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 193 : 1905_38_C_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 194 : 1905_38_C_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 195 : 1910_97_T_C 
+2 alleles
+13.3% missing data
+   0   0.859 
+   1   0.141 
+
+Locus 196 : 1910_97_T_HET 
+2 alleles
+13.3% missing data
+   0   0.895 
+   1   0.105 
+
+Locus 197 : 1912_108_T_C 
+2 alleles
+16.7% missing data
+   0   0.667 
+   1   0.333 
+
+Locus 198 : 1912_108_T_HET 
+2 alleles
+16.7% missing data
+   0   0.803 
+   1   0.197 
+
+Locus 199 : 1925_30_G_C 
+2 alleles
+20.0% missing data
+   0   0.560 
+   1   0.440 
+
+Locus 200 : 1925_30_G_HET 
+2 alleles
+20.0% missing data
+   0   0.766 
+   1   0.234 
+
+Locus 201 : 1926_92_A_C 
+2 alleles
+13.3% missing data
+   0   0.858 
+   1   0.142 
+
+Locus 202 : 1926_92_A_HET 
+2 alleles
+13.3% missing data
+   0   0.858 
+   1   0.142 
+
+Locus 203 : 1927_27_A_C 
+2 alleles
+16.7% missing data
+   0   0.628 
+   1   0.372 
+
+Locus 204 : 1927_27_A_HET 
+2 alleles
+16.7% missing data
+   0   0.746 
+   1   0.254 
+
+Locus 205 : 1927_44_A_0 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 206 : 1927_44_A_HET 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 207 : 1933_27_C_C 
+2 alleles
+10.0% missing data
+   0   0.582 
+   1   0.418 
+
+Locus 208 : 1933_27_C_HET 
+2 alleles
+10.0% missing data
+   0   0.764 
+   1   0.236 
+
+Locus 209 : 1933_36_C_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 210 : 1933_36_C_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 211 : 1933_49_A_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 212 : 1933_49_A_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 213 : 1933_92_G_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 214 : 1933_92_G_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 215 : 1944_27_A_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 216 : 1944_27_A_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 217 : 1944_99_A_C 
+2 alleles
+1.7% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 218 : 1944_99_A_HET 
+2 alleles
+1.7% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 219 : 1952_96_A_0 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 220 : 1952_96_A_HET 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 221 : 1973_90_C_C 
+2 alleles
+0.0% missing data
+   0   0.935 
+   1   0.065 
+
+Locus 222 : 1973_90_C_HET 
+2 alleles
+0.0% missing data
+   0   0.951 
+   1   0.049 
+
+Locus 223 : 2007_103_A_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 224 : 2007_103_A_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 225 : 2007_104_G_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 226 : 2007_104_G_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 227 : 2007_105_A_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 228 : 2007_105_A_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 229 : 201_67_A_C 
+2 alleles
+1.7% missing data
+   0   0.934 
+   1   0.066 
+
+Locus 230 : 201_67_A_HET 
+2 alleles
+1.7% missing data
+   0   0.935 
+   1   0.065 
+
+Locus 231 : 2016_84_A_C 
+2 alleles
+10.0% missing data
+   0   0.844 
+   1   0.156 
+
+Locus 232 : 2016_84_A_HET 
+2 alleles
+10.0% missing data
+   0   0.863 
+   1   0.137 
+
+Locus 233 : 202_64_G_C 
+2 alleles
+6.7% missing data
+   1   0.413 
+   0   0.587 
+
+Locus 234 : 202_64_G_HET 
+2 alleles
+6.7% missing data
+   0   0.798 
+   1   0.202 
+
+Locus 235 : 2039_34_C_A 
+2 alleles
+16.7% missing data
+   0   0.520 
+   1   0.480 
+
+Locus 236 : 2039_34_C_HET 
+2 alleles
+16.7% missing data
+   0   0.795 
+   1   0.205 
+
+Locus 237 : 2039_66_G_C 
+2 alleles
+5.0% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 238 : 2039_66_G_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 239 : 2054_28_T_C 
+2 alleles
+15.0% missing data
+   0   0.800 
+   1   0.200 
+
+Locus 240 : 2054_28_T_HET 
+2 alleles
+15.0% missing data
+   0   0.838 
+   1   0.162 
+
+Locus 241 : 2054_79_C_C 
+2 alleles
+21.7% missing data
+   1   0.343 
+   0   0.657 
+
+Locus 242 : 2054_79_C_HET 
+2 alleles
+21.7% missing data
+   0   0.763 
+   1   0.237 
+
+Locus 243 : 2054_86_G_C 
+2 alleles
+25.0% missing data
+   0   0.544 
+   1   0.456 
+
+Locus 244 : 2054_86_G_HET 
+2 alleles
+25.0% missing data
+   0   0.718 
+   1   0.282 
+
+Locus 245 : 2076_22_A_C 
+2 alleles
+5.0% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 246 : 2076_22_A_HET 
+2 alleles
+5.0% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 247 : 2078_16_A_C 
+2 alleles
+8.3% missing data
+   1   0.422 
+   0   0.578 
+
+Locus 248 : 2078_16_A_HET 
+2 alleles
+8.3% missing data
+   0   0.739 
+   1   0.261 
+
+Locus 249 : 2093_9_A_C 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 250 : 2093_9_A_HET 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 251 : 2112_9_T_C 
+2 alleles
+10.0% missing data
+   1   0.473 
+   0   0.527 
+
+Locus 252 : 2112_9_T_HET 
+2 alleles
+10.0% missing data
+   0   0.785 
+   1   0.215 
+
+Locus 253 : 2112_90_T_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 254 : 2112_90_T_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 255 : 2115_15_A_C 
+2 alleles
+13.3% missing data
+   0   0.576 
+   1   0.424 
+
+Locus 256 : 2115_15_A_HET 
+2 alleles
+13.3% missing data
+   0   0.705 
+   1   0.295 
+
+Locus 257 : 2115_16_C_C 
+2 alleles
+15.0% missing data
+   0   0.576 
+   1   0.424 
+
+Locus 258 : 2115_16_C_HET 
+2 alleles
+15.0% missing data
+   0   0.711 
+   1   0.289 
+
+Locus 259 : 2115_27_T_C 
+2 alleles
+15.0% missing data
+   0   0.579 
+   1   0.421 
+
+Locus 260 : 2115_27_T_HET 
+2 alleles
+15.0% missing data
+   0   0.712 
+   1   0.288 
+
+Locus 261 : 2115_55_A_C 
+2 alleles
+11.7% missing data
+   0   0.796 
+   1   0.204 
+
+Locus 262 : 2115_55_A_HET 
+2 alleles
+11.7% missing data
+   0   0.887 
+   1   0.113 
+
+Locus 263 : 2115_96_A_0 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 264 : 2115_96_A_HET 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 265 : 2118_109_A_0 
+1 alleles
+10.0% missing data
+   0   1.000 
+
+Locus 266 : 2118_109_A_HET 
+1 alleles
+10.0% missing data
+   0   1.000 
+
+Locus 267 : 2118_42_A_C 
+2 alleles
+10.0% missing data
+   0   0.946 
+   1   0.054 
+
+Locus 268 : 2118_42_A_HET 
+2 alleles
+10.0% missing data
+   0   0.945 
+   1   0.055 
+
+Locus 269 : 2118_7_T_C 
+2 alleles
+10.0% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 270 : 2118_7_T_HET 
+2 alleles
+10.0% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 271 : 2118_89_T_C 
+2 alleles
+11.7% missing data
+   0   0.817 
+   1   0.183 
+
+Locus 272 : 2118_89_T_HET 
+2 alleles
+11.7% missing data
+   0   0.888 
+   1   0.112 
+
+Locus 273 : 2118_98_T_C 
+2 alleles
+21.7% missing data
+   0   0.615 
+   1   0.385 
+
+Locus 274 : 2118_98_T_HET 
+2 alleles
+21.7% missing data
+   0   0.742 
+   1   0.258 
+
+Locus 275 : 2129_94_G_C 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 276 : 2129_94_G_HET 
+2 alleles
+3.3% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 277 : 2134_39_C_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 278 : 2134_39_C_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 279 : 2145_64_G_C 
+2 alleles
+6.7% missing data
+   0   0.691 
+   1   0.309 
+
+Locus 280 : 2145_64_G_HET 
+2 alleles
+6.7% missing data
+   0   0.817 
+   1   0.183 
+
+Locus 281 : 2156_12_C_C 
+2 alleles
+5.0% missing data
+   0   0.707 
+   1   0.293 
+
+Locus 282 : 2156_12_C_HET 
+2 alleles
+5.0% missing data
+   0   0.809 
+   1   0.191 
+
+Locus 283 : 2156_76_A_C 
+2 alleles
+5.0% missing data
+   0   0.708 
+   1   0.292 
+
+Locus 284 : 2156_76_A_HET 
+2 alleles
+5.0% missing data
+   0   0.812 
+   1   0.188 
+
+Locus 285 : 2156_81_A_C 
+2 alleles
+3.3% missing data
+   0   0.744 
+   1   0.256 
+
+Locus 286 : 2156_81_A_HET 
+2 alleles
+3.3% missing data
+   0   0.831 
+   1   0.169 
+
+Locus 287 : 2156_82_C_C 
+2 alleles
+5.0% missing data
+   0   0.707 
+   1   0.293 
+
+Locus 288 : 2156_82_C_HET 
+2 alleles
+5.0% missing data
+   0   0.811 
+   1   0.189 
+
+Locus 289 : 216_9_T_C 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 290 : 216_9_T_HET 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 291 : 2175_50_C_C 
+2 alleles
+3.3% missing data
+   0   0.947 
+   1   0.053 
+
+Locus 292 : 2175_50_C_HET 
+2 alleles
+3.3% missing data
+   0   0.950 
+   1   0.050 
+
+Locus 293 : 2175_74_T_C 
+2 alleles
+3.3% missing data
+   0   0.949 
+   1   0.051 
+
+Locus 294 : 2175_74_T_HET 
+2 alleles
+3.3% missing data
+   0   0.949 
+   1   0.051 
+
+Locus 295 : 2180_23_A_C 
+2 alleles
+8.3% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 296 : 2180_23_A_HET 
+2 alleles
+8.3% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 297 : 2182_90_T_C 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 298 : 2182_90_T_HET 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 299 : 2193_8_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 300 : 2193_8_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 301 : 220_29_G_C 
+2 alleles
+1.7% missing data
+   0   0.976 
+   1   0.024 
+
+Locus 302 : 220_29_G_HET 
+2 alleles
+1.7% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 303 : 2222_18_G_C 
+2 alleles
+3.3% missing data
+   0   0.778 
+   1   0.222 
+
+Locus 304 : 2222_18_G_HET 
+2 alleles
+3.3% missing data
+   0   0.850 
+   1   0.150 
+
+Locus 305 : 2222_48_T_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 306 : 2222_48_T_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 307 : 2287_110_G_C 
+2 alleles
+10.0% missing data
+   0   0.774 
+   1   0.226 
+
+Locus 308 : 2287_110_G_HET 
+2 alleles
+10.0% missing data
+   0   0.846 
+   1   0.154 
+
+Locus 309 : 2287_24_G_C 
+2 alleles
+11.7% missing data
+   0   0.806 
+   1   0.194 
+
+Locus 310 : 2287_24_G_HET 
+2 alleles
+11.7% missing data
+   0   0.841 
+   1   0.159 
+
+Locus 311 : 2289_107_T_0 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 312 : 2289_107_T_HET 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 313 : 2289_22_T_0 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 314 : 2289_22_T_HET 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 315 : 2289_34_G_C 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 316 : 2289_34_G_HET 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 317 : 2295_42_T_0 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 318 : 2295_42_T_HET 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 319 : 2311_15_G_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 320 : 2311_15_G_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 321 : 2315_14_C_C 
+2 alleles
+21.7% missing data
+   0   0.559 
+   1   0.441 
+
+Locus 322 : 2315_14_C_HET 
+2 alleles
+21.7% missing data
+   0   0.708 
+   1   0.292 
+
+Locus 323 : 2316_17_G_C 
+2 alleles
+6.7% missing data
+   0   0.870 
+   1   0.130 
+
+Locus 324 : 2316_17_G_HET 
+2 alleles
+6.7% missing data
+   0   0.867 
+   1   0.133 
+
+Locus 325 : 2321_89_A_C 
+2 alleles
+8.3% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 326 : 2321_89_A_HET 
+2 alleles
+8.3% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 327 : 2333_24_A_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 328 : 2333_24_A_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 329 : 236_95_A_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 330 : 236_95_A_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 331 : 2377_91_C_C 
+2 alleles
+3.3% missing data
+   0   0.575 
+   1   0.425 
+
+Locus 332 : 2377_91_C_HET 
+2 alleles
+3.3% missing data
+   0   0.730 
+   1   0.270 
+
+Locus 333 : 2391_67_T_C 
+2 alleles
+1.7% missing data
+   0   0.858 
+   1   0.142 
+
+Locus 334 : 2391_67_T_HET 
+2 alleles
+1.7% missing data
+   0   0.876 
+   1   0.124 
+
+Locus 335 : 2394_17_C_C 
+2 alleles
+3.3% missing data
+   0   0.890 
+   1   0.110 
+
+Locus 336 : 2394_17_C_HET 
+2 alleles
+3.3% missing data
+   0   0.890 
+   1   0.110 
+
+Locus 337 : 2394_34_G_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 338 : 2394_34_G_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 339 : 2394_84_A_C 
+2 alleles
+5.0% missing data
+   0   0.544 
+   1   0.456 
+
+Locus 340 : 2394_84_A_HET 
+2 alleles
+5.0% missing data
+   0   0.733 
+   1   0.267 
+
+Locus 341 : 24_15_A_C 
+2 alleles
+1.7% missing data
+   0   0.941 
+   1   0.059 
+
+Locus 342 : 24_15_A_HET 
+2 alleles
+1.7% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 343 : 24_19_T_C 
+2 alleles
+11.7% missing data
+   0   0.647 
+   1   0.353 
+
+Locus 344 : 24_19_T_HET 
+2 alleles
+11.7% missing data
+   0   0.759 
+   1   0.241 
+
+Locus 345 : 2429_104_A_C 
+2 alleles
+1.7% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 346 : 2429_104_A_HET 
+2 alleles
+1.7% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 347 : 2429_19_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 348 : 2429_19_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 349 : 2447_68_G_C 
+2 alleles
+6.7% missing data
+   0   0.851 
+   1   0.149 
+
+Locus 350 : 2447_68_G_HET 
+2 alleles
+6.7% missing data
+   0   0.869 
+   1   0.131 
+
+Locus 351 : 2458_86_T_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 352 : 2458_86_T_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 353 : 2472_48_C_C 
+2 alleles
+3.3% missing data
+   0   0.771 
+   1   0.229 
+
+Locus 354 : 2472_48_C_HET 
+2 alleles
+3.3% missing data
+   0   0.806 
+   1   0.194 
+
+Locus 355 : 2472_55_G_C 
+2 alleles
+6.7% missing data
+   0   0.754 
+   1   0.246 
+
+Locus 356 : 2472_55_G_HET 
+2 alleles
+6.7% missing data
+   0   0.789 
+   1   0.211 
+
+Locus 357 : 2472_71_G_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 358 : 2472_71_G_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 359 : 2517_41_G_C 
+2 alleles
+11.7% missing data
+   0   0.546 
+   1   0.454 
+
+Locus 360 : 2517_41_G_HET 
+2 alleles
+11.7% missing data
+   0   0.751 
+   1   0.249 
+
+Locus 361 : 2519_99_C_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 362 : 2519_99_C_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 363 : 2522_102_T_C 
+2 alleles
+16.7% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 364 : 2522_102_T_HET 
+2 alleles
+16.7% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 365 : 2522_13_A_0 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 366 : 2522_13_A_HET 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 367 : 2522_95_A_0 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 368 : 2522_95_A_HET 
+1 alleles
+16.7% missing data
+   0   1.000 
+
+Locus 369 : 2550_49_T_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 370 : 2550_49_T_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 371 : 2560_107_C_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 372 : 2560_107_C_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 373 : 2565_48_T_C 
+2 alleles
+23.3% missing data
+   0   0.978 
+   1   0.022 
+
+Locus 374 : 2565_48_T_HET 
+2 alleles
+23.3% missing data
+   0   0.978 
+   1   0.022 
+
+Locus 375 : 2597_28_T_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 376 : 2597_28_T_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 377 : 2597_92_G_C 
+2 alleles
+15.0% missing data
+   0   0.526 
+   1   0.474 
+
+Locus 378 : 2597_92_G_HET 
+2 alleles
+15.0% missing data
+   0   0.722 
+   1   0.278 
+
+Locus 379 : 2600_95_A_C 
+2 alleles
+5.0% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 380 : 2600_95_A_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 381 : 2663_101_C_C 
+2 alleles
+8.3% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 382 : 2663_101_C_HET 
+2 alleles
+8.3% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 383 : 2663_74_A_C 
+2 alleles
+10.0% missing data
+   0   0.692 
+   1   0.308 
+
+Locus 384 : 2663_74_A_HET 
+2 alleles
+10.0% missing data
+   0   0.780 
+   1   0.220 
+
+Locus 385 : 2664_42_T_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 386 : 2664_42_T_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 387 : 2664_70_G_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 388 : 2664_70_G_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 389 : 2664_79_G_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 390 : 2664_79_G_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 391 : 2680_61_T_C 
+2 alleles
+1.7% missing data
+   0   0.976 
+   1   0.024 
+
+Locus 392 : 2680_61_T_HET 
+2 alleles
+1.7% missing data
+   0   0.976 
+   1   0.024 
+
+Locus 393 : 2686_85_T_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 394 : 2686_85_T_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 395 : 2686_87_T_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 396 : 2686_87_T_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 397 : 2689_27_A_C 
+2 alleles
+15.0% missing data
+   0   0.682 
+   1   0.318 
+
+Locus 398 : 2689_27_A_HET 
+2 alleles
+15.0% missing data
+   0   0.816 
+   1   0.184 
+
+Locus 399 : 269_59_A_C 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 400 : 269_59_A_HET 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 401 : 269_93_G_C 
+2 alleles
+5.0% missing data
+   1   0.423 
+   0   0.577 
+
+Locus 402 : 269_93_G_HET 
+2 alleles
+5.0% missing data
+   0   0.837 
+   1   0.163 
+
+Locus 403 : 2696_57_C_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 404 : 2696_57_C_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 405 : 2708_70_C_C 
+2 alleles
+6.7% missing data
+   0   0.702 
+   1   0.298 
+
+Locus 406 : 2708_70_C_HET 
+2 alleles
+6.7% missing data
+   0   0.788 
+   1   0.212 
+
+Locus 407 : 271_80_A_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 408 : 271_80_A_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 409 : 2723_109_T_C 
+2 alleles
+6.7% missing data
+   0   0.658 
+   1   0.342 
+
+Locus 410 : 2723_109_T_HET 
+2 alleles
+6.7% missing data
+   0   0.780 
+   1   0.220 
+
+Locus 411 : 2732_49_G_C 
+2 alleles
+1.7% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 412 : 2732_49_G_HET 
+2 alleles
+1.7% missing data
+   0   0.968 
+   1   0.032 
+
+Locus 413 : 2737_15_C_C 
+2 alleles
+5.0% missing data
+   0   0.861 
+   1   0.139 
+
+Locus 414 : 2737_15_C_HET 
+2 alleles
+5.0% missing data
+   0   0.860 
+   1   0.140 
+
+Locus 415 : 2737_23_C_C 
+2 alleles
+6.7% missing data
+   0   0.684 
+   1   0.316 
+
+Locus 416 : 2737_23_C_HET 
+2 alleles
+6.7% missing data
+   0   0.753 
+   1   0.247 
+
+Locus 417 : 2764_109_A_C 
+2 alleles
+8.3% missing data
+   0   0.517 
+   1   0.483 
+
+Locus 418 : 2764_109_A_HET 
+2 alleles
+8.3% missing data
+   0   0.770 
+   1   0.230 
+
+Locus 419 : 2784_50_T_C 
+2 alleles
+6.7% missing data
+   0   0.746 
+   1   0.254 
+
+Locus 420 : 2784_50_T_HET 
+2 alleles
+6.7% missing data
+   0   0.832 
+   1   0.168 
+
+Locus 421 : 2784_76_T_C 
+2 alleles
+13.3% missing data
+   1   0.471 
+   0   0.529 
+
+Locus 422 : 2784_76_T_HET 
+2 alleles
+13.3% missing data
+   0   0.717 
+   1   0.283 
+
+Locus 423 : 2784_97_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 424 : 2784_97_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 425 : 2787_43_C_C 
+2 alleles
+15.0% missing data
+   0   0.576 
+   1   0.424 
+
+Locus 426 : 2787_43_C_HET 
+2 alleles
+15.0% missing data
+   0   0.711 
+   1   0.289 
+
+Locus 427 : 2805_71_A_C 
+2 alleles
+10.0% missing data
+   0   0.728 
+   1   0.272 
+
+Locus 428 : 2805_71_A_HET 
+2 alleles
+10.0% missing data
+   0   0.818 
+   1   0.182 
+
+Locus 429 : 2805_86_A_C 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 430 : 2805_86_A_HET 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 431 : 2820_73_C_C 
+2 alleles
+3.3% missing data
+   0   0.940 
+   1   0.060 
+
+Locus 432 : 2820_73_C_HET 
+2 alleles
+3.3% missing data
+   0   0.942 
+   1   0.058 
+
+Locus 433 : 2827_41_A_C 
+2 alleles
+11.7% missing data
+   0   0.917 
+   1   0.083 
+
+Locus 434 : 2827_41_A_HET 
+2 alleles
+11.7% missing data
+   0   0.935 
+   1   0.065 
+
+Locus 435 : 2827_90_G_C 
+2 alleles
+23.3% missing data
+   0   0.681 
+   1   0.319 
+
+Locus 436 : 2827_90_G_HET 
+2 alleles
+23.3% missing data
+   0   0.766 
+   1   0.234 
+
+Locus 437 : 2836_79_A_C 
+2 alleles
+3.3% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 438 : 2836_79_A_HET 
+2 alleles
+3.3% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 439 : 2860_19_G_A 
+2 alleles
+13.3% missing data
+   1   0.500 
+   0   0.500 
+
+Locus 440 : 2860_19_G_HET 
+2 alleles
+13.3% missing data
+   0   0.745 
+   1   0.255 
+
+Locus 441 : 2860_91_A_C 
+2 alleles
+13.3% missing data
+   0   0.510 
+   1   0.490 
+
+Locus 442 : 2860_91_A_HET 
+2 alleles
+13.3% missing data
+   0   0.756 
+   1   0.244 
+
+Locus 443 : 2862_100_C_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 444 : 2862_100_C_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 445 : 2862_104_T_C 
+2 alleles
+1.7% missing data
+   0   0.959 
+   1   0.041 
+
+Locus 446 : 2862_104_T_HET 
+2 alleles
+1.7% missing data
+   0   0.957 
+   1   0.043 
+
+Locus 447 : 2862_68_C_A 
+2 alleles
+8.3% missing data
+   0   0.499 
+   1   0.501 
+
+Locus 448 : 2862_68_C_HET 
+2 alleles
+8.3% missing data
+   0   0.766 
+   1   0.234 
+
+Locus 449 : 2864_97_G_C 
+2 alleles
+18.3% missing data
+   0   0.540 
+   1   0.460 
+
+Locus 450 : 2864_97_G_HET 
+2 alleles
+18.3% missing data
+   0   0.640 
+   1   0.360 
+
+Locus 451 : 2868_37_A_C 
+2 alleles
+8.3% missing data
+   0   0.795 
+   1   0.205 
+
+Locus 452 : 2868_37_A_HET 
+2 alleles
+8.3% missing data
+   0   0.814 
+   1   0.186 
+
+Locus 453 : 2881_85_T_C 
+2 alleles
+5.0% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 454 : 2881_85_T_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 455 : 2885_39_C_C 
+2 alleles
+5.0% missing data
+   0   0.836 
+   1   0.164 
+
+Locus 456 : 2885_39_C_HET 
+2 alleles
+5.0% missing data
+   0   0.887 
+   1   0.113 
+
+Locus 457 : 2885_77_A_C 
+2 alleles
+5.0% missing data
+   0   0.836 
+   1   0.164 
+
+Locus 458 : 2885_77_A_HET 
+2 alleles
+5.0% missing data
+   0   0.888 
+   1   0.112 
+
+Locus 459 : 2885_88_A_C 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 460 : 2885_88_A_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 461 : 2890_110_C_C 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 462 : 2890_110_C_HET 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 463 : 2905_105_C_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 464 : 2905_105_C_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 465 : 2905_14_A_C 
+2 alleles
+8.3% missing data
+   1   0.420 
+   0   0.580 
+
+Locus 466 : 2905_14_A_HET 
+2 alleles
+8.3% missing data
+   0   0.814 
+   1   0.186 
+
+Locus 467 : 2915_91_C_C 
+2 alleles
+11.7% missing data
+   0   0.742 
+   1   0.258 
+
+Locus 468 : 2915_91_C_HET 
+2 alleles
+11.7% missing data
+   0   0.777 
+   1   0.223 
+
+Locus 469 : 2950_56_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 470 : 2950_56_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 471 : 2950_8_G_C 
+2 alleles
+3.3% missing data
+   0   0.693 
+   1   0.307 
+
+Locus 472 : 2950_8_G_HET 
+2 alleles
+3.3% missing data
+   0   0.796 
+   1   0.204 
+
+Locus 473 : 2951_105_T_C 
+2 alleles
+5.0% missing data
+   0   0.819 
+   1   0.181 
+
+Locus 474 : 2951_105_T_HET 
+2 alleles
+5.0% missing data
+   0   0.889 
+   1   0.111 
+
+Locus 475 : 2951_7_A_C 
+2 alleles
+5.0% missing data
+   0   0.821 
+   1   0.179 
+
+Locus 476 : 2951_7_A_HET 
+2 alleles
+5.0% missing data
+   0   0.870 
+   1   0.130 
+
+Locus 477 : 2958_109_T_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 478 : 2958_109_T_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 479 : 2958_32_T_C 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 480 : 2958_32_T_HET 
+2 alleles
+5.0% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 481 : 2959_34_A_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 482 : 2959_34_A_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 483 : 2959_61_A_C 
+2 alleles
+1.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 484 : 2959_61_A_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 485 : 2992_79_G_C 
+2 alleles
+10.0% missing data
+   0   0.844 
+   1   0.156 
+
+Locus 486 : 2992_79_G_HET 
+2 alleles
+10.0% missing data
+   0   0.864 
+   1   0.136 
+
+Locus 487 : 3_58_G_C 
+2 alleles
+8.3% missing data
+   0   0.812 
+   1   0.188 
+
+Locus 488 : 3_58_G_HET 
+2 alleles
+8.3% missing data
+   0   0.866 
+   1   0.134 
+
+Locus 489 : 3002_84_G_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 490 : 3002_84_G_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 491 : 3009_94_C_C 
+2 alleles
+3.3% missing data
+   0   0.907 
+   1   0.093 
+
+Locus 492 : 3009_94_C_HET 
+2 alleles
+3.3% missing data
+   0   0.906 
+   1   0.094 
+
+Locus 493 : 3018_78_A_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 494 : 3018_78_A_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 495 : 3039_63_A_C 
+2 alleles
+0.0% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 496 : 3039_63_A_HET 
+2 alleles
+0.0% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 497 : 3041_49_T_C 
+2 alleles
+1.7% missing data
+   0   0.765 
+   1   0.235 
+
+Locus 498 : 3041_49_T_HET 
+2 alleles
+1.7% missing data
+   0   0.799 
+   1   0.201 
+
+Locus 499 : 3050_28_C_C 
+2 alleles
+16.7% missing data
+   0   0.772 
+   1   0.228 
+
+Locus 500 : 3050_28_C_HET 
+2 alleles
+16.7% missing data
+   0   0.831 
+   1   0.169 
+
+Locus 501 : 3050_78_G_C 
+2 alleles
+13.3% missing data
+   0   0.745 
+   1   0.255 
+
+Locus 502 : 3050_78_G_HET 
+2 alleles
+13.3% missing data
+   0   0.800 
+   1   0.200 
+
+Locus 503 : 3072_83_T_C 
+2 alleles
+11.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 504 : 3072_83_T_HET 
+2 alleles
+11.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 505 : 3082_65_T_0 
+1 alleles
+13.3% missing data
+   0   1.000 
+
+Locus 506 : 3082_65_T_HET 
+1 alleles
+13.3% missing data
+   0   1.000 
+
+Locus 507 : 3085_18_C_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 508 : 3085_18_C_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 509 : 3085_94_T_C 
+2 alleles
+3.3% missing data
+   0   0.753 
+   1   0.247 
+
+Locus 510 : 3085_94_T_HET 
+2 alleles
+3.3% missing data
+   0   0.805 
+   1   0.195 
+
+Locus 511 : 3102_66_T_C 
+2 alleles
+10.0% missing data
+   0   0.621 
+   1   0.379 
+
+Locus 512 : 3102_66_T_HET 
+2 alleles
+10.0% missing data
+   0   0.780 
+   1   0.220 
+
+Locus 513 : 3115_64_G_A 
+2 alleles
+10.0% missing data
+   0   0.527 
+   1   0.473 
+
+Locus 514 : 3115_64_G_HET 
+2 alleles
+10.0% missing data
+   0   0.673 
+   1   0.327 
+
+Locus 515 : 3115_87_G_A 
+2 alleles
+13.3% missing data
+   0   0.509 
+   1   0.491 
+
+Locus 516 : 3115_87_G_HET 
+2 alleles
+13.3% missing data
+   0   0.660 
+   1   0.340 
+
+Locus 517 : 3115_91_A_C 
+2 alleles
+3.3% missing data
+   0   0.932 
+   1   0.068 
+
+Locus 518 : 3115_91_A_HET 
+2 alleles
+3.3% missing data
+   0   0.931 
+   1   0.069 
+
+Locus 519 : 3115_99_A_C 
+2 alleles
+0.0% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 520 : 3115_99_A_HET 
+2 alleles
+0.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 521 : 3121_96_G_C 
+2 alleles
+1.7% missing data
+   0   0.918 
+   1   0.082 
+
+Locus 522 : 3121_96_G_HET 
+2 alleles
+1.7% missing data
+   0   0.916 
+   1   0.084 
+
+Locus 523 : 3122_64_T_C 
+2 alleles
+11.7% missing data
+   0   0.915 
+   1   0.085 
+
+Locus 524 : 3122_64_T_HET 
+2 alleles
+11.7% missing data
+   0   0.917 
+   1   0.083 
+
+Locus 525 : 3132_97_A_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 526 : 3132_97_A_HET 
+2 alleles
+3.3% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 527 : 315_20_C_C 
+2 alleles
+11.7% missing data
+   0   0.798 
+   1   0.202 
+
+Locus 528 : 315_20_C_HET 
+2 alleles
+11.7% missing data
+   0   0.869 
+   1   0.131 
+
+Locus 529 : 315_76_A_C 
+2 alleles
+11.7% missing data
+   0   0.788 
+   1   0.212 
+
+Locus 530 : 315_76_A_HET 
+2 alleles
+11.7% missing data
+   0   0.879 
+   1   0.121 
+
+Locus 531 : 3161_71_A_C 
+2 alleles
+1.7% missing data
+   0   0.941 
+   1   0.059 
+
+Locus 532 : 3161_71_A_HET 
+2 alleles
+1.7% missing data
+   0   0.943 
+   1   0.057 
+
+Locus 533 : 3179_70_A_C 
+2 alleles
+3.3% missing data
+   0   0.847 
+   1   0.153 
+
+Locus 534 : 3179_70_A_HET 
+2 alleles
+3.3% missing data
+   0   0.899 
+   1   0.101 
+
+Locus 535 : 3201_36_A_C 
+2 alleles
+10.0% missing data
+   0   0.945 
+   1   0.055 
+
+Locus 536 : 3201_36_A_HET 
+2 alleles
+10.0% missing data
+   0   0.945 
+   1   0.055 
+
+Locus 537 : 3210_81_T_C 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 538 : 3210_81_T_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 539 : 3229_59_A_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 540 : 3229_59_A_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 541 : 3229_60_T_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 542 : 3229_60_T_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 543 : 3275_12_C_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 544 : 3275_12_C_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 545 : 3277_43_C_C 
+2 alleles
+8.3% missing data
+   0   0.715 
+   1   0.285 
+
+Locus 546 : 3277_43_C_HET 
+2 alleles
+8.3% missing data
+   0   0.785 
+   1   0.215 
+
+Locus 547 : 328_11_A_C 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 548 : 328_11_A_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 549 : 328_67_A_C 
+2 alleles
+5.0% missing data
+   0   0.931 
+   1   0.069 
+
+Locus 550 : 328_67_A_HET 
+2 alleles
+5.0% missing data
+   0   0.932 
+   1   0.068 
+
+Locus 551 : 3299_32_G_C 
+2 alleles
+5.0% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 552 : 3299_32_G_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 553 : 33_74_C_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 554 : 33_74_C_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 555 : 3320_81_T_C 
+2 alleles
+5.0% missing data
+   0   0.861 
+   1   0.139 
+
+Locus 556 : 3320_81_T_HET 
+2 alleles
+5.0% missing data
+   0   0.896 
+   1   0.104 
+
+Locus 557 : 3337_40_A_C 
+2 alleles
+5.0% missing data
+   0   0.888 
+   1   0.112 
+
+Locus 558 : 3337_40_A_HET 
+2 alleles
+5.0% missing data
+   0   0.888 
+   1   0.112 
+
+Locus 559 : 3341_32_C_C 
+2 alleles
+5.0% missing data
+   0   0.889 
+   1   0.111 
+
+Locus 560 : 3341_32_C_HET 
+2 alleles
+5.0% missing data
+   0   0.887 
+   1   0.113 
+
+Locus 561 : 3349_55_G_C 
+2 alleles
+5.0% missing data
+   0   0.895 
+   1   0.105 
+
+Locus 562 : 3349_55_G_HET 
+2 alleles
+5.0% missing data
+   0   0.896 
+   1   0.104 
+
+Locus 563 : 335_53_C_C 
+2 alleles
+20.0% missing data
+   0   0.930 
+   1   0.070 
+
+Locus 564 : 335_53_C_HET 
+2 alleles
+20.0% missing data
+   0   0.969 
+   1   0.031 
+
+Locus 565 : 3357_23_T_C 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 566 : 3357_23_T_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 567 : 3367_24_G_C 
+2 alleles
+23.3% missing data
+   0   0.979 
+   1   0.021 
+
+Locus 568 : 3367_24_G_HET 
+2 alleles
+23.3% missing data
+   0   0.979 
+   1   0.021 
+
+Locus 569 : 3376_108_T_C 
+2 alleles
+6.7% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 570 : 3376_108_T_HET 
+2 alleles
+6.7% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 571 : 3376_35_T_C 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 572 : 3376_35_T_HET 
+2 alleles
+6.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 573 : 3415_69_C_C 
+2 alleles
+5.0% missing data
+   0   0.923 
+   1   0.077 
+
+Locus 574 : 3415_69_C_HET 
+2 alleles
+5.0% missing data
+   0   0.923 
+   1   0.077 
+
+Locus 575 : 3415_91_T_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 576 : 3415_91_T_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 577 : 3422_103_T_0 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 578 : 3422_103_T_HET 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 579 : 3422_38_T_0 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 580 : 3422_38_T_HET 
+1 alleles
+8.3% missing data
+   0   1.000 
+
+Locus 581 : 3440_58_A_C 
+2 alleles
+10.0% missing data
+   0   0.674 
+   1   0.326 
+
+Locus 582 : 3440_58_A_HET 
+2 alleles
+10.0% missing data
+   0   0.781 
+   1   0.219 
+
+Locus 583 : 3448_57_A_C 
+2 alleles
+16.7% missing data
+   0   0.971 
+   1   0.029 
+
+Locus 584 : 3448_57_A_HET 
+2 alleles
+16.7% missing data
+   0   0.971 
+   1   0.029 
+
+Locus 585 : 3448_63_G_0 
+1 alleles
+15.0% missing data
+   0   1.000 
+
+Locus 586 : 3448_63_G_HET 
+1 alleles
+15.0% missing data
+   0   1.000 
+
+Locus 587 : 3449_82_G_C 
+2 alleles
+0.0% missing data
+   0   0.951 
+   1   0.049 
+
+Locus 588 : 3449_82_G_HET 
+2 alleles
+0.0% missing data
+   0   0.951 
+   1   0.049 
+
+Locus 589 : 3449_83_G_C 
+2 alleles
+0.0% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 590 : 3449_83_G_HET 
+2 alleles
+0.0% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 591 : 3506_83_A_C 
+2 alleles
+21.7% missing data
+   0   0.959 
+   1   0.041 
+
+Locus 592 : 3506_83_A_HET 
+2 alleles
+21.7% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 593 : 3518_66_G_C 
+2 alleles
+3.3% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 594 : 3518_66_G_HET 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 595 : 3518_82_T_C 
+2 alleles
+1.7% missing data
+   0   0.950 
+   1   0.050 
+
+Locus 596 : 3518_82_T_HET 
+2 alleles
+1.7% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 597 : 3528_32_T_0 
+1 alleles
+18.3% missing data
+   0   1.000 
+
+Locus 598 : 3528_32_T_HET 
+1 alleles
+18.3% missing data
+   0   1.000 
+
+Locus 599 : 3530_6_A_C 
+2 alleles
+18.3% missing data
+   0   0.960 
+   1   0.040 
+
+Locus 600 : 3530_6_A_HET 
+2 alleles
+18.3% missing data
+   0   0.960 
+   1   0.040 
+
+Locus 601 : 3530_87_T_0 
+1 alleles
+18.3% missing data
+   0   1.000 
+
+Locus 602 : 3530_87_T_HET 
+1 alleles
+18.3% missing data
+   0   1.000 
+
+Locus 603 : 3535_38_T_0 
+1 alleles
+18.3% missing data
+   0   1.000 
+
+Locus 604 : 3535_38_T_HET 
+1 alleles
+18.3% missing data
+   0   1.000 
+
+Locus 605 : 3545_24_A_C 
+2 alleles
+0.0% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 606 : 3545_24_A_HET 
+2 alleles
+0.0% missing data
+   0   0.968 
+   1   0.032 
+
+Locus 607 : 3545_83_A_C 
+2 alleles
+0.0% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 608 : 3545_83_A_HET 
+2 alleles
+0.0% missing data
+   0   0.968 
+   1   0.032 
+
+Locus 609 : 3558_105_T_C 
+2 alleles
+10.0% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 610 : 3558_105_T_HET 
+2 alleles
+10.0% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 611 : 3567_35_C_C 
+2 alleles
+10.0% missing data
+   0   0.729 
+   1   0.271 
+
+Locus 612 : 3567_35_C_HET 
+2 alleles
+10.0% missing data
+   0   0.801 
+   1   0.199 
+
+Locus 613 : 3574_96_C_C 
+2 alleles
+10.0% missing data
+   0   0.864 
+   1   0.136 
+
+Locus 614 : 3574_96_C_HET 
+2 alleles
+10.0% missing data
+   0   0.862 
+   1   0.138 
+
+Locus 615 : 3585_65_G_C 
+2 alleles
+21.7% missing data
+   0   0.782 
+   1   0.218 
+
+Locus 616 : 3585_65_G_HET 
+2 alleles
+21.7% missing data
+   0   0.862 
+   1   0.138 
+
+Locus 617 : 3599_38_T_C 
+2 alleles
+18.3% missing data
+   0   0.960 
+   1   0.040 
+
+Locus 618 : 3599_38_T_HET 
+2 alleles
+18.3% missing data
+   0   0.961 
+   1   0.039 
+
+Locus 619 : 3599_55_T_C 
+2 alleles
+16.7% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 620 : 3599_55_T_HET 
+2 alleles
+16.7% missing data
+   0   0.980 
+   1   0.020 
+
+Locus 621 : 3610_92_G_C 
+2 alleles
+6.7% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 622 : 3610_92_G_HET 
+2 alleles
+6.7% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 623 : 3637_28_A_C 
+2 alleles
+25.0% missing data
+   0   0.978 
+   1   0.022 
+
+Locus 624 : 3637_28_A_HET 
+2 alleles
+25.0% missing data
+   0   0.978 
+   1   0.022 
+
+Locus 625 : 366_70_G_C 
+2 alleles
+26.7% missing data
+   0   0.921 
+   1   0.079 
+
+Locus 626 : 366_70_G_HET 
+2 alleles
+26.7% missing data
+   0   0.922 
+   1   0.078 
+
+Locus 627 : 3682_102_A_C 
+2 alleles
+6.7% missing data
+   0   0.676 
+   1   0.324 
+
+Locus 628 : 3682_102_A_HET 
+2 alleles
+6.7% missing data
+   0   0.748 
+   1   0.252 
+
+Locus 629 : 37_70_A_C 
+2 alleles
+8.3% missing data
+   0   0.498 
+   1   0.502 
+
+Locus 630 : 37_70_A_HET 
+2 alleles
+8.3% missing data
+   0   0.768 
+   1   0.232 
+
+Locus 631 : 3708_77_T_C 
+2 alleles
+0.0% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 632 : 3708_77_T_HET 
+2 alleles
+0.0% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 633 : 3729_78_C_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 634 : 3729_78_C_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 635 : 3752_99_T_C 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 636 : 3752_99_T_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 637 : 3758_66_G_C 
+2 alleles
+6.7% missing data
+   0   0.524 
+   1   0.476 
+
+Locus 638 : 3758_66_G_HET 
+2 alleles
+6.7% missing data
+   0   0.699 
+   1   0.301 
+
+Locus 639 : 3759_20_A_C 
+2 alleles
+20.0% missing data
+   0   0.601 
+   1   0.399 
+
+Locus 640 : 3759_20_A_HET 
+2 alleles
+20.0% missing data
+   0   0.683 
+   1   0.317 
+
+Locus 641 : 3759_61_C_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 642 : 3759_61_C_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 643 : 3759_82_T_C 
+2 alleles
+10.0% missing data
+   0   0.825 
+   1   0.175 
+
+Locus 644 : 3759_82_T_HET 
+2 alleles
+10.0% missing data
+   0   0.863 
+   1   0.137 
+
+Locus 645 : 3791_96_A_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 646 : 3791_96_A_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 647 : 3813_103_A_0 
+1 alleles
+11.7% missing data
+   0   1.000 
+
+Locus 648 : 3813_103_A_HET 
+1 alleles
+11.7% missing data
+   0   1.000 
+
+Locus 649 : 3824_27_T_C 
+2 alleles
+5.0% missing data
+   0   0.715 
+   1   0.285 
+
+Locus 650 : 3824_27_T_HET 
+2 alleles
+5.0% missing data
+   0   0.801 
+   1   0.199 
+
+Locus 651 : 3829_94_C_C 
+2 alleles
+8.3% missing data
+   0   0.705 
+   1   0.295 
+
+Locus 652 : 3829_94_C_HET 
+2 alleles
+8.3% missing data
+   0   0.779 
+   1   0.221 
+
+Locus 653 : 3838_51_T_C 
+2 alleles
+8.3% missing data
+   0   0.964 
+   1   0.036 
+
+Locus 654 : 3838_51_T_HET 
+2 alleles
+8.3% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 655 : 3838_73_A_C 
+2 alleles
+11.7% missing data
+   1   0.351 
+   0   0.649 
+
+Locus 656 : 3838_73_A_HET 
+2 alleles
+11.7% missing data
+   0   0.739 
+   1   0.261 
+
+Locus 657 : 3843_106_C_C 
+2 alleles
+11.7% missing data
+   1   0.315 
+   0   0.685 
+
+Locus 658 : 3843_106_C_HET 
+2 alleles
+11.7% missing data
+   0   0.795 
+   1   0.205 
+
+Locus 659 : 3843_92_G_C 
+2 alleles
+8.3% missing data
+   0   0.688 
+   1   0.312 
+
+Locus 660 : 3843_92_G_HET 
+2 alleles
+8.3% missing data
+   0   0.796 
+   1   0.204 
+
+Locus 661 : 3843_97_G_C 
+2 alleles
+5.0% missing data
+   0   0.948 
+   1   0.052 
+
+Locus 662 : 3843_97_G_HET 
+2 alleles
+5.0% missing data
+   0   0.948 
+   1   0.052 
+
+Locus 663 : 3853_66_G_C 
+2 alleles
+5.0% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 664 : 3853_66_G_HET 
+2 alleles
+5.0% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 665 : 3858_81_C_C 
+2 alleles
+18.3% missing data
+   0   0.941 
+   1   0.059 
+
+Locus 666 : 3858_81_C_HET 
+2 alleles
+18.3% missing data
+   0   0.941 
+   1   0.059 
+
+Locus 667 : 386_84_C_C 
+2 alleles
+1.7% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 668 : 386_84_C_HET 
+2 alleles
+1.7% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 669 : 3862_26_A_C 
+2 alleles
+1.7% missing data
+   0   0.925 
+   1   0.075 
+
+Locus 670 : 3862_26_A_HET 
+2 alleles
+1.7% missing data
+   0   0.940 
+   1   0.060 
+
+Locus 671 : 3870_35_G_C 
+2 alleles
+20.0% missing data
+   1   0.326 
+   0   0.674 
+
+Locus 672 : 3870_35_G_HET 
+2 alleles
+20.0% missing data
+   0   0.734 
+   1   0.266 
+
+Locus 673 : 3870_92_T_C 
+2 alleles
+6.7% missing data
+   0   0.957 
+   1   0.043 
+
+Locus 674 : 3870_92_T_HET 
+2 alleles
+6.7% missing data
+   0   0.956 
+   1   0.044 
+
+Locus 675 : 3885_9_G_C 
+2 alleles
+6.7% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 676 : 3885_9_G_HET 
+2 alleles
+6.7% missing data
+   0   0.956 
+   1   0.044 
+
+Locus 677 : 3888_6_C_C 
+2 alleles
+6.7% missing data
+   0   0.631 
+   1   0.369 
+
+Locus 678 : 3888_6_C_HET 
+2 alleles
+6.7% missing data
+   0   0.719 
+   1   0.281 
+
+Locus 679 : 389_107_T_C 
+2 alleles
+8.3% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 680 : 389_107_T_HET 
+2 alleles
+8.3% missing data
+   0   0.964 
+   1   0.036 
+
+Locus 681 : 3892_102_C_C 
+2 alleles
+6.7% missing data
+   0   0.717 
+   1   0.283 
+
+Locus 682 : 3892_102_C_HET 
+2 alleles
+6.7% missing data
+   0   0.739 
+   1   0.261 
+
+Locus 683 : 3900_11_T_C 
+2 alleles
+5.0% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 684 : 3900_11_T_HET 
+2 alleles
+5.0% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 685 : 392_23_G_C 
+2 alleles
+25.0% missing data
+   0   0.902 
+   1   0.098 
+
+Locus 686 : 392_23_G_HET 
+2 alleles
+25.0% missing data
+   0   0.902 
+   1   0.098 
+
+Locus 687 : 392_35_G_C 
+2 alleles
+13.3% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 688 : 392_35_G_HET 
+2 alleles
+13.3% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 689 : 392_74_A_C 
+2 alleles
+18.3% missing data
+   0   0.941 
+   1   0.059 
+
+Locus 690 : 392_74_A_HET 
+2 alleles
+18.3% missing data
+   0   0.939 
+   1   0.061 
+
+Locus 691 : 3922_60_A_C 
+2 alleles
+28.3% missing data
+   1   0.330 
+   0   0.670 
+
+Locus 692 : 3922_60_A_HET 
+2 alleles
+28.3% missing data
+   0   0.919 
+   1   0.081 
+
+Locus 693 : 3926_92_A_C 
+2 alleles
+5.0% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 694 : 3926_92_A_HET 
+2 alleles
+5.0% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 695 : 3935_56_G_C 
+2 alleles
+3.3% missing data
+   0   0.644 
+   1   0.356 
+
+Locus 696 : 3935_56_G_HET 
+2 alleles
+3.3% missing data
+   0   0.745 
+   1   0.255 
+
+Locus 697 : 3935_71_G_C 
+2 alleles
+3.3% missing data
+   0   0.627 
+   1   0.373 
+
+Locus 698 : 3935_71_G_HET 
+2 alleles
+3.3% missing data
+   0   0.744 
+   1   0.256 
+
+Locus 699 : 3938_38_T_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 700 : 3938_38_T_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 701 : 3972_74_C_C 
+2 alleles
+5.0% missing data
+   0   0.889 
+   1   0.111 
+
+Locus 702 : 3972_74_C_HET 
+2 alleles
+5.0% missing data
+   0   0.887 
+   1   0.113 
+
+Locus 703 : 3975_33_T_C 
+2 alleles
+10.0% missing data
+   1   0.265 
+   0   0.735 
+
+Locus 704 : 3975_33_T_HET 
+2 alleles
+10.0% missing data
+   0   0.830 
+   1   0.170 
+
+Locus 705 : 3975_43_T_C 
+2 alleles
+11.7% missing data
+   1   0.391 
+   0   0.609 
+
+Locus 706 : 3975_43_T_HET 
+2 alleles
+11.7% missing data
+   0   0.798 
+   1   0.202 
+
+Locus 707 : 3975_95_C_C 
+2 alleles
+10.0% missing data
+   1   0.264 
+   0   0.736 
+
+Locus 708 : 3975_95_C_HET 
+2 alleles
+10.0% missing data
+   0   0.828 
+   1   0.172 
+
+Locus 709 : 3991_110_A_C 
+2 alleles
+3.3% missing data
+   0   0.906 
+   1   0.094 
+
+Locus 710 : 3991_110_A_HET 
+2 alleles
+3.3% missing data
+   0   0.907 
+   1   0.093 
+
+Locus 711 : 4011_75_A_C 
+2 alleles
+3.3% missing data
+   0   0.898 
+   1   0.102 
+
+Locus 712 : 4011_75_A_HET 
+2 alleles
+3.3% missing data
+   0   0.933 
+   1   0.067 
+
+Locus 713 : 4025_101_C_C 
+2 alleles
+8.3% missing data
+   0   0.946 
+   1   0.054 
+
+Locus 714 : 4025_101_C_HET 
+2 alleles
+8.3% missing data
+   0   0.947 
+   1   0.053 
+
+Locus 715 : 4036_48_A_C 
+2 alleles
+3.3% missing data
+   0   0.947 
+   1   0.053 
+
+Locus 716 : 4036_48_A_HET 
+2 alleles
+3.3% missing data
+   0   0.949 
+   1   0.051 
+
+Locus 717 : 4036_71_C_C 
+2 alleles
+6.7% missing data
+   0   0.729 
+   1   0.271 
+
+Locus 718 : 4036_71_C_HET 
+2 alleles
+6.7% missing data
+   0   0.800 
+   1   0.200 
+
+Locus 719 : 4066_7_A_C 
+2 alleles
+1.7% missing data
+   0   0.950 
+   1   0.050 
+
+Locus 720 : 4066_7_A_HET 
+2 alleles
+1.7% missing data
+   0   0.950 
+   1   0.050 
+
+Locus 721 : 4139_65_G_C 
+2 alleles
+13.3% missing data
+   0   0.867 
+   1   0.133 
+
+Locus 722 : 4139_65_G_HET 
+2 alleles
+13.3% missing data
+   0   0.888 
+   1   0.112 
+
+Locus 723 : 4142_101_T_C 
+2 alleles
+10.0% missing data
+   0   0.837 
+   1   0.163 
+
+Locus 724 : 4142_101_T_HET 
+2 alleles
+10.0% missing data
+   0   0.872 
+   1   0.128 
+
+Locus 725 : 4142_17_G_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 726 : 4142_17_G_HET 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 727 : 4142_81_G_C 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 728 : 4142_81_G_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 729 : 4151_36_G_C 
+2 alleles
+13.3% missing data
+   0   0.839 
+   1   0.161 
+
+Locus 730 : 4151_36_G_HET 
+2 alleles
+13.3% missing data
+   0   0.896 
+   1   0.104 
+
+Locus 731 : 4151_7_A_C 
+2 alleles
+11.7% missing data
+   0   0.899 
+   1   0.101 
+
+Locus 732 : 4151_7_A_HET 
+2 alleles
+11.7% missing data
+   0   0.936 
+   1   0.064 
+
+Locus 733 : 4151_74_T_C 
+2 alleles
+23.3% missing data
+   0   0.702 
+   1   0.298 
+
+Locus 734 : 4151_74_T_HET 
+2 alleles
+23.3% missing data
+   0   0.789 
+   1   0.211 
+
+Locus 735 : 4156_101_C_C 
+2 alleles
+8.3% missing data
+   0   0.617 
+   1   0.383 
+
+Locus 736 : 4156_101_C_HET 
+2 alleles
+8.3% missing data
+   0   0.884 
+   1   0.116 
+
+Locus 737 : 4156_102_T_C 
+2 alleles
+8.3% missing data
+   0   0.714 
+   1   0.286 
+
+Locus 738 : 4156_102_T_HET 
+2 alleles
+8.3% missing data
+   0   0.802 
+   1   0.198 
+
+Locus 739 : 4158_35_C_C 
+2 alleles
+3.3% missing data
+   0   0.795 
+   1   0.205 
+
+Locus 740 : 4158_35_C_HET 
+2 alleles
+3.3% missing data
+   0   0.830 
+   1   0.170 
+
+Locus 741 : 4158_51_T_C 
+2 alleles
+1.7% missing data
+   0   0.951 
+   1   0.049 
+
+Locus 742 : 4158_51_T_HET 
+2 alleles
+1.7% missing data
+   0   0.950 
+   1   0.050 
+
+Locus 743 : 4184_15_A_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 744 : 4184_15_A_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 745 : 4184_56_T_C 
+2 alleles
+1.7% missing data
+   0   0.959 
+   1   0.041 
+
+Locus 746 : 4184_56_T_HET 
+2 alleles
+1.7% missing data
+   0   0.958 
+   1   0.042 
+
+Locus 747 : 4187_108_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 748 : 4187_108_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 749 : 4187_77_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 750 : 4187_77_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 751 : 420_27_A_C 
+2 alleles
+6.7% missing data
+   0   0.939 
+   1   0.061 
+
+Locus 752 : 420_27_A_HET 
+2 alleles
+6.7% missing data
+   0   0.938 
+   1   0.062 
+
+Locus 753 : 4206_7_G_C 
+2 alleles
+5.0% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 754 : 4206_7_G_HET 
+2 alleles
+5.0% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 755 : 421_29_T_C 
+2 alleles
+8.3% missing data
+   0   0.866 
+   1   0.134 
+
+Locus 756 : 421_29_T_HET 
+2 alleles
+8.3% missing data
+   0   0.919 
+   1   0.081 
+
+Locus 757 : 421_94_T_C 
+2 alleles
+8.3% missing data
+   0   0.865 
+   1   0.135 
+
+Locus 758 : 421_94_T_HET 
+2 alleles
+8.3% missing data
+   0   0.920 
+   1   0.080 
+
+Locus 759 : 4216_47_C_0 
+1 alleles
+0.0% missing data
+   0   1.000 
+
+Locus 760 : 4216_47_C_HET 
+1 alleles
+0.0% missing data
+   0   1.000 
+
+Locus 761 : 4266_109_A_C 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 762 : 4266_109_A_HET 
+2 alleles
+6.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 763 : 4266_59_A_C 
+2 alleles
+10.0% missing data
+   1   0.328 
+   0   0.672 
+
+Locus 764 : 4266_59_A_HET 
+2 alleles
+10.0% missing data
+   0   0.748 
+   1   0.252 
+
+Locus 765 : 4283_102_G_0 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 766 : 4283_102_G_HET 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 767 : 4283_103_T_C 
+2 alleles
+16.7% missing data
+   0   0.745 
+   1   0.255 
+
+Locus 768 : 4283_103_T_HET 
+2 alleles
+16.7% missing data
+   0   0.842 
+   1   0.158 
+
+Locus 769 : 4286_107_A_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 770 : 4286_107_A_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 771 : 4309_56_G_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 772 : 4309_56_G_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 773 : 4315_89_G_C 
+2 alleles
+8.3% missing data
+   0   0.829 
+   1   0.171 
+
+Locus 774 : 4315_89_G_HET 
+2 alleles
+8.3% missing data
+   0   0.830 
+   1   0.170 
+
+Locus 775 : 4315_96_C_C 
+2 alleles
+3.3% missing data
+   0   0.914 
+   1   0.086 
+
+Locus 776 : 4315_96_C_HET 
+2 alleles
+3.3% missing data
+   0   0.915 
+   1   0.085 
+
+Locus 777 : 4340_61_A_C 
+2 alleles
+8.3% missing data
+   0   0.919 
+   1   0.081 
+
+Locus 778 : 4340_61_A_HET 
+2 alleles
+8.3% missing data
+   0   0.938 
+   1   0.062 
+
+Locus 779 : 4340_90_T_C 
+2 alleles
+18.3% missing data
+   1   0.430 
+   0   0.570 
+
+Locus 780 : 4340_90_T_HET 
+2 alleles
+18.3% missing data
+   0   0.728 
+   1   0.272 
+
+Locus 781 : 4346_46_T_C 
+2 alleles
+6.7% missing data
+   0   0.782 
+   1   0.218 
+
+Locus 782 : 4346_46_T_HET 
+2 alleles
+6.7% missing data
+   0   0.801 
+   1   0.199 
+
+Locus 783 : 4346_49_T_C 
+2 alleles
+10.0% missing data
+   0   0.776 
+   1   0.224 
+
+Locus 784 : 4346_49_T_HET 
+2 alleles
+10.0% missing data
+   0   0.792 
+   1   0.208 
+
+Locus 785 : 4346_67_A_C 
+2 alleles
+3.3% missing data
+   0   0.873 
+   1   0.127 
+
+Locus 786 : 4346_67_A_HET 
+2 alleles
+3.3% missing data
+   0   0.890 
+   1   0.110 
+
+Locus 787 : 4346_68_T_C 
+2 alleles
+3.3% missing data
+   0   0.874 
+   1   0.126 
+
+Locus 788 : 4346_68_T_HET 
+2 alleles
+3.3% missing data
+   0   0.890 
+   1   0.110 
+
+Locus 789 : 4362_74_T_C 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 790 : 4362_74_T_HET 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 791 : 4404_51_C_C 
+2 alleles
+6.7% missing data
+   0   0.859 
+   1   0.141 
+
+Locus 792 : 4404_51_C_HET 
+2 alleles
+6.7% missing data
+   0   0.859 
+   1   0.141 
+
+Locus 793 : 4449_87_T_C 
+2 alleles
+6.7% missing data
+   1   0.428 
+   0   0.572 
+
+Locus 794 : 4449_87_T_HET 
+2 alleles
+6.7% missing data
+   0   0.708 
+   1   0.292 
+
+Locus 795 : 4449_99_C_C 
+2 alleles
+5.0% missing data
+   0   0.922 
+   1   0.078 
+
+Locus 796 : 4449_99_C_HET 
+2 alleles
+5.0% missing data
+   0   0.957 
+   1   0.043 
+
+Locus 797 : 4451_72_C_0 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 798 : 4451_72_C_HET 
+1 alleles
+5.0% missing data
+   0   1.000 
+
+Locus 799 : 4465_24_A_C 
+2 alleles
+3.3% missing data
+   0   0.966 
+   1   0.034 
+
+Locus 800 : 4465_24_A_HET 
+2 alleles
+3.3% missing data
+   0   0.965 
+   1   0.035 
+
+Locus 801 : 4482_62_A_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 802 : 4482_62_A_HET 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 803 : 4482_83_T_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 804 : 4482_83_T_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 805 : 4482_90_A_C 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 806 : 4482_90_A_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 807 : 4484_25_C_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 808 : 4484_25_C_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 809 : 4484_27_T_C 
+2 alleles
+3.3% missing data
+   0   0.790 
+   1   0.210 
+
+Locus 810 : 4484_27_T_HET 
+2 alleles
+3.3% missing data
+   0   0.839 
+   1   0.161 
+
+Locus 811 : 4489_17_C_C 
+2 alleles
+5.0% missing data
+   0   0.784 
+   1   0.216 
+
+Locus 812 : 4489_17_C_HET 
+2 alleles
+5.0% missing data
+   0   0.837 
+   1   0.163 
+
+Locus 813 : 4489_42_C_C 
+2 alleles
+6.7% missing data
+   0   0.806 
+   1   0.194 
+
+Locus 814 : 4489_42_C_HET 
+2 alleles
+6.7% missing data
+   0   0.843 
+   1   0.157 
+
+Locus 815 : 4489_46_T_C 
+2 alleles
+6.7% missing data
+   0   0.799 
+   1   0.201 
+
+Locus 816 : 4489_46_T_HET 
+2 alleles
+6.7% missing data
+   0   0.833 
+   1   0.167 
+
+Locus 817 : 4490_13_C_C 
+2 alleles
+26.7% missing data
+   0   0.800 
+   1   0.200 
+
+Locus 818 : 4490_13_C_HET 
+2 alleles
+26.7% missing data
+   0   0.799 
+   1   0.201 
+
+Locus 819 : 4490_34_A_C 
+2 alleles
+30.0% missing data
+   0   0.815 
+   1   0.185 
+
+Locus 820 : 4490_34_A_HET 
+2 alleles
+30.0% missing data
+   0   0.812 
+   1   0.188 
+
+Locus 821 : 4501_80_T_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 822 : 4501_80_T_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 823 : 4512_85_A_C 
+2 alleles
+3.3% missing data
+   0   0.813 
+   1   0.187 
+
+Locus 824 : 4512_85_A_HET 
+2 alleles
+3.3% missing data
+   0   0.866 
+   1   0.134 
+
+Locus 825 : 4519_103_T_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 826 : 4519_103_T_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 827 : 4519_68_A_C 
+2 alleles
+5.0% missing data
+   0   0.506 
+   1   0.494 
+
+Locus 828 : 4519_68_A_HET 
+2 alleles
+5.0% missing data
+   0   0.715 
+   1   0.285 
+
+Locus 829 : 4519_83_C_C 
+2 alleles
+5.0% missing data
+   0   0.725 
+   1   0.275 
+
+Locus 830 : 4519_83_C_HET 
+2 alleles
+5.0% missing data
+   0   0.811 
+   1   0.189 
+
+Locus 831 : 453_34_A_0 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 832 : 453_34_A_HET 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 833 : 453_72_A_C 
+2 alleles
+6.7% missing data
+   0   0.947 
+   1   0.053 
+
+Locus 834 : 453_72_A_HET 
+2 alleles
+6.7% missing data
+   0   0.947 
+   1   0.053 
+
+Locus 835 : 454_36_T_0 
+1 alleles
+23.3% missing data
+   0   1.000 
+
+Locus 836 : 454_36_T_HET 
+1 alleles
+23.3% missing data
+   0   1.000 
+
+Locus 837 : 4561_55_G_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 838 : 4561_55_G_HET 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 839 : 4561_89_T_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 840 : 4561_89_T_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 841 : 4575_79_C_0 
+1 alleles
+0.0% missing data
+   0   1.000 
+
+Locus 842 : 4575_79_C_HET 
+1 alleles
+0.0% missing data
+   0   1.000 
+
+Locus 843 : 460_110_T_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 844 : 460_110_T_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 845 : 4617_50_A_C 
+2 alleles
+8.3% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 846 : 4617_50_A_HET 
+2 alleles
+8.3% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 847 : 4617_52_C_C 
+2 alleles
+8.3% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 848 : 4617_52_C_HET 
+2 alleles
+8.3% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 849 : 4632_104_A_0 
+1 alleles
+23.3% missing data
+   0   1.000 
+
+Locus 850 : 4632_104_A_HET 
+1 alleles
+23.3% missing data
+   0   1.000 
+
+Locus 851 : 4632_110_G_C 
+2 alleles
+25.0% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 852 : 4632_110_G_HET 
+2 alleles
+25.0% missing data
+   0   0.967 
+   1   0.033 
+
+Locus 853 : 4632_52_A_C 
+2 alleles
+23.3% missing data
+   0   0.969 
+   1   0.031 
+
+Locus 854 : 4632_52_A_HET 
+2 alleles
+23.3% missing data
+   0   0.968 
+   1   0.032 
+
+Locus 855 : 4632_99_A_C 
+2 alleles
+23.3% missing data
+   0   0.979 
+   1   0.021 
+
+Locus 856 : 4632_99_A_HET 
+2 alleles
+23.3% missing data
+   0   0.978 
+   1   0.022 
+
+Locus 857 : 4638_91_T_C 
+2 alleles
+15.0% missing data
+   0   0.980 
+   1   0.020 
+
+Locus 858 : 4638_91_T_HET 
+2 alleles
+15.0% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 859 : 4651_55_C_C 
+2 alleles
+6.7% missing data
+   1   0.466 
+   0   0.534 
+
+Locus 860 : 4651_55_C_HET 
+2 alleles
+6.7% missing data
+   0   0.745 
+   1   0.255 
+
+Locus 861 : 4694_6_A_C 
+2 alleles
+3.3% missing data
+   0   0.900 
+   1   0.100 
+
+Locus 862 : 4694_6_A_HET 
+2 alleles
+3.3% missing data
+   0   0.899 
+   1   0.101 
+
+Locus 863 : 4697_19_A_0 
+1 alleles
+11.7% missing data
+   0   1.000 
+
+Locus 864 : 4697_19_A_HET 
+1 alleles
+11.7% missing data
+   0   1.000 
+
+Locus 865 : 4715_67_C_C 
+2 alleles
+8.3% missing data
+   0   0.901 
+   1   0.099 
+
+Locus 866 : 4715_67_C_HET 
+2 alleles
+8.3% missing data
+   0   0.956 
+   1   0.044 
+
+Locus 867 : 475_67_G_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 868 : 475_67_G_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 869 : 484_21_A_C 
+2 alleles
+6.7% missing data
+   0   0.728 
+   1   0.272 
+
+Locus 870 : 484_21_A_HET 
+2 alleles
+6.7% missing data
+   0   0.835 
+   1   0.165 
+
+Locus 871 : 489_89_G_C 
+2 alleles
+5.0% missing data
+   0   0.924 
+   1   0.076 
+
+Locus 872 : 489_89_G_HET 
+2 alleles
+5.0% missing data
+   0   0.940 
+   1   0.060 
+
+Locus 873 : 489_94_T_C 
+2 alleles
+3.3% missing data
+   0   0.915 
+   1   0.085 
+
+Locus 874 : 489_94_T_HET 
+2 alleles
+3.3% missing data
+   0   0.931 
+   1   0.069 
+
+Locus 875 : 489_95_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 876 : 489_95_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 877 : 495_108_C_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 878 : 495_108_C_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 879 : 495_90_C_C 
+2 alleles
+10.0% missing data
+   0   0.836 
+   1   0.164 
+
+Locus 880 : 495_90_C_HET 
+2 alleles
+10.0% missing data
+   0   0.874 
+   1   0.126 
+
+Locus 881 : 495_94_C_C 
+2 alleles
+8.3% missing data
+   0   0.655 
+   1   0.345 
+
+Locus 882 : 495_94_C_HET 
+2 alleles
+8.3% missing data
+   0   0.849 
+   1   0.151 
+
+Locus 883 : 518_48_T_C 
+2 alleles
+16.7% missing data
+   0   0.962 
+   1   0.038 
+
+Locus 884 : 518_48_T_HET 
+2 alleles
+16.7% missing data
+   0   0.961 
+   1   0.039 
+
+Locus 885 : 520_47_T_C 
+2 alleles
+11.7% missing data
+   0   0.963 
+   1   0.037 
+
+Locus 886 : 520_47_T_HET 
+2 alleles
+11.7% missing data
+   0   0.981 
+   1   0.019 
+
+Locus 887 : 520_71_A_C 
+2 alleles
+11.7% missing data
+   0   0.788 
+   1   0.212 
+
+Locus 888 : 520_71_A_HET 
+2 alleles
+11.7% missing data
+   0   0.916 
+   1   0.084 
+
+Locus 889 : 585_29_C_C 
+2 alleles
+13.3% missing data
+   0   0.596 
+   1   0.404 
+
+Locus 890 : 585_29_C_HET 
+2 alleles
+13.3% missing data
+   0   0.689 
+   1   0.311 
+
+Locus 891 : 592_106_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 892 : 592_106_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 893 : 592_84_G_C 
+2 alleles
+8.3% missing data
+   0   0.562 
+   1   0.438 
+
+Locus 894 : 592_84_G_HET 
+2 alleles
+8.3% missing data
+   0   0.686 
+   1   0.314 
+
+Locus 895 : 597_46_T_C 
+2 alleles
+16.7% missing data
+   0   0.705 
+   1   0.295 
+
+Locus 896 : 597_46_T_HET 
+2 alleles
+16.7% missing data
+   0   0.764 
+   1   0.236 
+
+Locus 897 : 597_87_A_C 
+2 alleles
+13.3% missing data
+   0   0.776 
+   1   0.224 
+
+Locus 898 : 597_87_A_HET 
+2 alleles
+13.3% missing data
+   0   0.811 
+   1   0.189 
+
+Locus 899 : 603_75_T_C 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 900 : 603_75_T_HET 
+2 alleles
+1.7% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 901 : 615_85_C_C 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 902 : 615_85_C_HET 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 903 : 627_57_T_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 904 : 627_57_T_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 905 : 650_68_G_C 
+2 alleles
+1.7% missing data
+   0   0.984 
+   1   0.016 
+
+Locus 906 : 650_68_G_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 907 : 657_108_C_C 
+2 alleles
+13.3% missing data
+   0   0.744 
+   1   0.256 
+
+Locus 908 : 657_108_C_HET 
+2 alleles
+13.3% missing data
+   0   0.822 
+   1   0.178 
+
+Locus 909 : 663_39_A_C 
+2 alleles
+10.0% missing data
+   0   0.790 
+   1   0.210 
+
+Locus 910 : 663_39_A_HET 
+2 alleles
+10.0% missing data
+   0   0.826 
+   1   0.174 
+
+Locus 911 : 675_42_A_C 
+2 alleles
+11.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 912 : 675_42_A_HET 
+2 alleles
+11.7% missing data
+   0   0.982 
+   1   0.018 
+
+Locus 913 : 687_84_A_C 
+2 alleles
+31.7% missing data
+   0   0.977 
+   1   0.023 
+
+Locus 914 : 687_84_A_HET 
+2 alleles
+31.7% missing data
+   0   0.976 
+   1   0.024 
+
+Locus 915 : 692_26_G_C 
+2 alleles
+18.3% missing data
+   1   0.499 
+   0   0.501 
+
+Locus 916 : 692_26_G_HET 
+2 alleles
+18.3% missing data
+   0   0.762 
+   1   0.238 
+
+Locus 917 : 692_48_A_C 
+2 alleles
+5.0% missing data
+   0   0.948 
+   1   0.052 
+
+Locus 918 : 692_48_A_HET 
+2 alleles
+5.0% missing data
+   0   0.948 
+   1   0.052 
+
+Locus 919 : 721_89_G_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 920 : 721_89_G_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 921 : 727_28_G_C 
+2 alleles
+1.7% missing data
+   0   0.917 
+   1   0.083 
+
+Locus 922 : 727_28_G_HET 
+2 alleles
+1.7% missing data
+   0   0.933 
+   1   0.067 
+
+Locus 923 : 727_70_T_C 
+2 alleles
+5.0% missing data
+   0   0.708 
+   1   0.292 
+
+Locus 924 : 727_70_T_HET 
+2 alleles
+5.0% missing data
+   0   0.777 
+   1   0.223 
+
+Locus 925 : 745_90_T_C 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 926 : 745_90_T_HET 
+2 alleles
+1.7% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 927 : 759_100_T_C 
+2 alleles
+20.0% missing data
+   0   0.764 
+   1   0.236 
+
+Locus 928 : 759_100_T_HET 
+2 alleles
+20.0% missing data
+   0   0.806 
+   1   0.194 
+
+Locus 929 : 763_61_T_0 
+1 alleles
+11.7% missing data
+   0   1.000 
+
+Locus 930 : 763_61_T_HET 
+1 alleles
+11.7% missing data
+   0   1.000 
+
+Locus 931 : 767_69_A_C 
+2 alleles
+16.7% missing data
+   0   0.746 
+   1   0.254 
+
+Locus 932 : 767_69_A_HET 
+2 alleles
+16.7% missing data
+   0   0.824 
+   1   0.176 
+
+Locus 933 : 773_10_T_C 
+2 alleles
+8.3% missing data
+   0   0.751 
+   1   0.249 
+
+Locus 934 : 773_10_T_HET 
+2 alleles
+8.3% missing data
+   0   0.768 
+   1   0.232 
+
+Locus 935 : 773_12_C_C 
+2 alleles
+1.7% missing data
+   0   0.932 
+   1   0.068 
+
+Locus 936 : 773_12_C_HET 
+2 alleles
+1.7% missing data
+   0   0.949 
+   1   0.051 
+
+Locus 937 : 795_71_A_C 
+2 alleles
+6.7% missing data
+   0   0.763 
+   1   0.237 
+
+Locus 938 : 795_71_A_HET 
+2 alleles
+6.7% missing data
+   0   0.797 
+   1   0.203 
+
+Locus 939 : 798_35_A_C 
+2 alleles
+6.7% missing data
+   0   0.700 
+   1   0.300 
+
+Locus 940 : 798_35_A_HET 
+2 alleles
+6.7% missing data
+   0   0.771 
+   1   0.229 
+
+Locus 941 : 798_58_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 942 : 798_58_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 943 : 798_77_A_C 
+2 alleles
+10.0% missing data
+   0   0.827 
+   1   0.173 
+
+Locus 944 : 798_77_A_HET 
+2 alleles
+10.0% missing data
+   0   0.865 
+   1   0.135 
+
+Locus 945 : 816_13_T_0 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 946 : 816_13_T_HET 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 947 : 816_45_A_C 
+2 alleles
+16.7% missing data
+   0   0.785 
+   1   0.215 
+
+Locus 948 : 816_45_A_HET 
+2 alleles
+16.7% missing data
+   0   0.843 
+   1   0.157 
+
+Locus 949 : 816_61_C_A 
+2 alleles
+16.7% missing data
+   0   0.550 
+   1   0.450 
+
+Locus 950 : 816_61_C_HET 
+2 alleles
+16.7% missing data
+   0   0.843 
+   1   0.157 
+
+Locus 951 : 828_12_A_C 
+2 alleles
+8.3% missing data
+   0   0.895 
+   1   0.105 
+
+Locus 952 : 828_12_A_HET 
+2 alleles
+8.3% missing data
+   0   0.928 
+   1   0.072 
+
+Locus 953 : 828_95_C_C 
+2 alleles
+10.0% missing data
+   0   0.890 
+   1   0.110 
+
+Locus 954 : 828_95_C_HET 
+2 alleles
+10.0% missing data
+   0   0.911 
+   1   0.089 
+
+Locus 955 : 851_102_C_C 
+2 alleles
+5.0% missing data
+   0   0.898 
+   1   0.102 
+
+Locus 956 : 851_102_C_HET 
+2 alleles
+5.0% missing data
+   0   0.914 
+   1   0.086 
+
+Locus 957 : 851_104_A_C 
+2 alleles
+6.7% missing data
+   0   0.904 
+   1   0.096 
+
+Locus 958 : 851_104_A_HET 
+2 alleles
+6.7% missing data
+   0   0.923 
+   1   0.077 
+
+Locus 959 : 851_109_A_0 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 960 : 851_109_A_HET 
+1 alleles
+6.7% missing data
+   0   1.000 
+
+Locus 961 : 851_67_T_C 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 962 : 851_67_T_HET 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 963 : 880_65_C_C 
+2 alleles
+16.7% missing data
+   1   0.470 
+   0   0.530 
+
+Locus 964 : 880_65_C_HET 
+2 alleles
+16.7% missing data
+   0   0.782 
+   1   0.218 
+
+Locus 965 : 880_90_T_C 
+2 alleles
+11.7% missing data
+   0   0.869 
+   1   0.131 
+
+Locus 966 : 880_90_T_HET 
+2 alleles
+11.7% missing data
+   0   0.889 
+   1   0.111 
+
+Locus 967 : 884_45_A_C 
+2 alleles
+3.3% missing data
+   0   0.974 
+   1   0.026 
+
+Locus 968 : 884_45_A_HET 
+2 alleles
+3.3% missing data
+   0   0.975 
+   1   0.025 
+
+Locus 969 : 885_101_C_C 
+2 alleles
+13.3% missing data
+   0   0.831 
+   1   0.169 
+
+Locus 970 : 885_101_C_HET 
+2 alleles
+13.3% missing data
+   0   0.852 
+   1   0.148 
+
+Locus 971 : 885_66_A_C 
+2 alleles
+16.7% missing data
+   0   0.589 
+   1   0.411 
+
+Locus 972 : 885_66_A_HET 
+2 alleles
+16.7% missing data
+   0   0.705 
+   1   0.295 
+
+Locus 973 : 910_109_T_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 974 : 910_109_T_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 975 : 910_55_C_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 976 : 910_55_C_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 977 : 919_52_G_C 
+2 alleles
+11.7% missing data
+   0   0.937 
+   1   0.063 
+
+Locus 978 : 919_52_G_HET 
+2 alleles
+11.7% missing data
+   0   0.955 
+   1   0.045 
+
+Locus 979 : 919_7_C_C 
+2 alleles
+10.0% missing data
+   0   0.900 
+   1   0.100 
+
+Locus 980 : 919_7_C_HET 
+2 alleles
+10.0% missing data
+   0   0.919 
+   1   0.081 
+
+Locus 981 : 95_21_C_0 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 982 : 95_21_C_HET 
+1 alleles
+3.3% missing data
+   0   1.000 
+
+Locus 983 : 95_33_C_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 984 : 95_33_C_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 985 : 95_46_T_C 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 986 : 95_46_T_HET 
+2 alleles
+3.3% missing data
+   0   0.983 
+   1   0.017 
+
+Locus 987 : 95_56_T_C 
+2 alleles
+18.3% missing data
+   0   0.542 
+   1   0.458 
+
+Locus 988 : 95_56_T_HET 
+2 alleles
+18.3% missing data
+   0   0.801 
+   1   0.199 
+
+Locus 989 : 95_63_A_C 
+2 alleles
+8.3% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 990 : 95_63_A_HET 
+2 alleles
+8.3% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 991 : 95_64_G_C 
+2 alleles
+18.3% missing data
+   0   0.510 
+   1   0.490 
+
+Locus 992 : 95_64_G_HET 
+2 alleles
+18.3% missing data
+   0   0.831 
+   1   0.169 
+
+Locus 993 : 95_66_C_C 
+2 alleles
+10.0% missing data
+   0   0.900 
+   1   0.100 
+
+Locus 994 : 95_66_C_HET 
+2 alleles
+10.0% missing data
+   0   0.898 
+   1   0.102 
+
+Locus 995 : 95_81_C_C 
+2 alleles
+6.7% missing data
+   0   0.938 
+   1   0.062 
+
+Locus 996 : 95_81_C_HET 
+2 alleles
+6.7% missing data
+   0   0.973 
+   1   0.027 
+
+Locus 997 : 95_84_T_A 
+2 alleles
+20.0% missing data
+   1   0.468 
+   0   0.532 
+
+Locus 998 : 95_84_T_HET 
+2 alleles
+20.0% missing data
+   0   0.757 
+   1   0.243 
+
+Locus 999 : 967_16_A_0 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Locus 1000 : 967_16_A_HET 
+1 alleles
+1.7% missing data
+   0   1.000 
+
+Values of parameters used in structure:
+DATAFILE=gtypes.created.on.2025-02-02.23.27.59.structureRun/gtypes.created.on.2025-02-02.23.27.59.structureRun.k1.r2_data,	OUTFILE=gtypes.created.on.2025-02-02.23.27.59.structureRun/gtypes.created.on.2025-02-02.23.27.59.structureRun.k1.r2_out,	NUMINDS=60,	NUMLOCI=1000,	MISSING=-9,	LABEL=1,	POPDATA=1,	POPFLAG=1,	PHENOTYPE=0,	EXTRACOLS=0,	MAXPOPS=1,	BURNIN=1000,	NUMREPS=1000,	USEPOPINFO=0,	INFERALPHA=0,	INFERLAMBDA=0,	POPSPECIFICLAMBDA=0,	POPALPHAS=0,	COMPUTEPROB=1,	NOADMIX=1,	ADMBURNIN=500,	UPDATEFREQ=200,	PRINTLIKES=0,	INTERMEDSAVE=0,	PRINTKLD=0,	PRINTNET=0,	PRINTLAMBDA=0,	ANCESTDIST=0,	NUMBOXES=1000,	ANCESTPINT=0.90000,	GENSBACK=2,	MIGRPRIOR=0.05000,	PRINTQHAT=0,	PRINTQSUM=0,	ALPHA=1.0000,	FREQSCORR=0,	FPRIORMEAN=0.0100,	FPRIORSD=0.0500,	ONEFST=0,	LAMBDA=1.0000,	UNIFPRIORALPHA=1,	ALPHAMAX=20.0000,	ALPHAPRIORA=0.0500,	ALPHAPRIORB=0.0010,	ALPHAPROPSD=0.0250,	STARTATPOPINFO=0,	RANDOMIZE=1,	LINKAGE=0,	METROFREQ=10,	REPORTHITRATE=0,	MARKOVPHASE=-1,	PHASED=1,	PLOIDY=2,	PHASEINFO=0	LOCPRIOR=0, 	LOCPRIORINIT=1.000000, 	LOCDATA=0, 	LOCISPOP=0, 	LOCPRIORSTEP=0.100000, 	MAXLOCPRIOR=20.000000, 	SEED=1738535289,	
+[STRAT parameters]:    NUMSIMSTATS=1000,	PHENOTYPECOL=-9,	POOLFREQ=10,	LOCUSxONLY=0,	EMERROR=0.00100,	MISSINGPHENO=-9,	
